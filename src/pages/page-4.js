@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 
 const FourthPage = () => (
   <Layout>
@@ -10,11 +10,11 @@ const FourthPage = () => (
     <Link to="/">Go back to the homepage</Link>
     <br />
     <Link to="/page-2/">360</Link>
-    <br/>
+    <br />
     <Link to="/page-3/">Mountain</Link>
-    <br/>
+    <br />
     <Link to="/page-5/">About us</Link>
   </Layout>
-)
+);
 
-export default FourthPage
+export default FourthPage;
