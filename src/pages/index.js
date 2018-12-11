@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <h1>Welcome</h1>
+    <h2>Welcome</h2>
     <p>🏗🏗🏗🏗The site is currently under construction.🏗🏗🏗🏗</p>
     <p>I'll display some images in the meantime.</p>
     <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>

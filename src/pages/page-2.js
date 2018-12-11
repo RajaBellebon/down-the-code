@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 
 const SecondPage = () => (
   <Layout>
-    <h1>360</h1>
+    <h2>360</h2>
     <p>A nice 360 image</p>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
       {/* {data.allFile.edges.filter(img =>img.node.name === 'three60').map(img => {

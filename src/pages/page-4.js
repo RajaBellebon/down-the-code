@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 
 const FourthPage = () => (
   <Layout>
-    <h1>Design System</h1>
+    <h2>Design System</h2>
     <p>Design system at the Everest Base Camp</p>
     <Link to="/">Go back to the homepage</Link>
     <br />

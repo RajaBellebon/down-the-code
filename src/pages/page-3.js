@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 
 const ThirdPage = () => (
   <Layout>
-    <h1>Mountain</h1>
+    <h2>Mountain</h2>
     <p>Mountains...</p>
     <Link to="/">Go back to the homepage</Link>
     <br />

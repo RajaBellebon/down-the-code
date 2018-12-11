@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 
 const FifthPage = () => (
   <Layout>
-    <h1>About us</h1>
+    <h2>About us</h2>
     <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
       <img src={GR} alt="Giulia and Raja" />
     </div>
