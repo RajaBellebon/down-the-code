@@ -1,20 +1,57 @@
+import React from 'react';
 import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import cases from 'jest-in-case';
 
-import Weather from './../components/Weather/Weather';
-import { feeling, weatherEmoji } from './../components/Weather/helper'
+import Weather from './../../../components/weather/Weather';
+import {
+  feelingEmoji,
+  weatherEmoji,
+} from './../../../components/weather/helper';
 
-Describe('Weather Functions', () => {
-  test('Feeling function should return default emoji 👋🏾)', () => {
-    expect(feeling(undefined)).toBe('👋🏾');
-  });
-  test('Weather emoji function should return default emoji 👋🏾', () => {
-    expect(weatherEmoji(undefined)).toBe('👋🏾');
-  });
-});
+configure({ adapter: new Adapter() });
 
+cases(
+  'Weather Feeling Function',
+  opts => {
+    expect(feelingEmoji(opts.temperature)).toBe(opts.emoji);
+  },
+  [
+    { name: 'Undefined', temperature: undefined, emoji: '😫' },
+    { name: 'temp >= 25', temperature: 25, emoji: '🤩' },
+    { name: 'temp >= 25', temperature: 30, emoji: '🤩' },
+    { name: 'temp < 25 && temp >= 20', temperature: 20, emoji: '😓' },
+    { name: 'temp < 25 && temp >= 20', temperature: 22, emoji: '😓' },
+    { name: 'temp < 20  && temp >= 0', temperature: 15, emoji: '😰' },
+    { name: 'temp < 20  && temp >= 0', temperature: '0', emoji: '😰' },
+    { name: 'temp <= 0', temperature: -10, emoji: '🤧' },
+    { name: 'Not a valid temperature', temperature: 'a', emoji: '👋🏾' },
+  ],
+);
 
-Describe('Weather Components', () => {
+cases(
+  'Weather Emoji Function',
+  opts => {
+    expect(weatherEmoji(opts.description)).toBe(opts.emoji);
+  },
+  [
+    { name: 'Undefined', description: undefined, emoji: '😫' },
+    { name: 'Rain', description: 'rain', emoji: '🌧 ☔️' },
+    { name: 'Sun', description: 'sun', emoji: '☀️' },
+    { name: 'Sun, clouds', description: 'sun, clouds', emoji: '🌤⛅' },
+    { name: 'Sun and Cloud', description: 'Sun And Cloud', emoji: '🌤⛅' },
+    { name: 'Sun, cloud', description: 'Sun, cloud', emoji: '🌤⛅' },
+    { name: 'Cloud', description: 'cloud', emoji: '☁️' },
+    { name: 'Clouds', description: 'clouds', emoji: '☁️' },
+    { name: 'Fog', description: 'fog', emoji: '🌫' },
+    { name: 'Snow', description: 'snow', emoji: '❄️' },
+    { name: 'Wind', description: 'wind', emoji: '🌬' },
+    { name: 'Winds', description: 'winds', emoji: '🌬' },
+    { name: 'Not a valid parameter', description: 'a', emoji: '👋🏾' },
+  ],
+);
+
+describe('Weather Components', () => {
   const wrapper = mount(<Weather />);
   test('Weather component should render', () => {
     expect(wrapper).toBeDefined();
@@ -22,4 +59,4 @@ Describe('Weather Components', () => {
   test('Weather component should match snapshots', () => {
     expect(wrapper).toMatchSnapshot();
   });
-})
+});
