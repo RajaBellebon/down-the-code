@@ -71,6 +71,9 @@ const weatherEmoji = param => {
         ):
         emoji = '☀️';
         break;
+      case weatherDescription.includes('clear'):
+        emoji = '☀️';
+        break;
       case weatherDescription.includes('snow'):
         emoji = '❄️';
         break;

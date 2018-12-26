@@ -38,6 +38,7 @@ cases(
     { name: 'Undefined', description: undefined, emoji: '😫' },
     { name: 'Rain', description: 'rain', emoji: '🌧 ☔️' },
     { name: 'Sun', description: 'sun', emoji: '☀️' },
+    { name: 'Clear', description: 'clear', emoji: '☀️' },
     { name: 'Sun, clouds', description: 'sun, clouds', emoji: '🌤⛅' },
     { name: 'Sun and Cloud', description: 'Sun And Cloud', emoji: '🌤⛅' },
     { name: 'Sun, cloud', description: 'Sun, cloud', emoji: '🌤⛅' },

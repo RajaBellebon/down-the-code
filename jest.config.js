@@ -9,6 +9,9 @@ module.exports = {
     // ignore files under __tests__ that start with an underscore
     '/__tests__\\/.*?\\/_.*?',
   ],
+  transform: {
+    '^.+\\.js$': 'babel-jest',
+  },
   modulePathIgnorePatterns: ['./node_modules', '/dist/', '/.cache/'],
   moduleFileExtensions: ['js', 'json'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
