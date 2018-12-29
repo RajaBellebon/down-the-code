@@ -4,10 +4,10 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 
-const SecondPage = () => (
+const Travel = () => (
   <Layout>
-    <h2>360</h2>
-    <p>A nice 360 image</p>
+    <h2>Nepal</h2>
+    <p>Let's put some nice pics from our recent travel</p>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
       {/* {data.allFile.edges.filter(img =>img.node.name === 'three60').map(img => {
       return <Img fluid={img.node.childImageSharp.fluid} key={img.node.name}/>
@@ -23,7 +23,7 @@ const SecondPage = () => (
   </Layout>
 );
 
-export default SecondPage;
+export default Travel;
 
 // export const pageQuery = graphql`
 //   query page2Query {

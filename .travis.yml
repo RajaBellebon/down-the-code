@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+script:
+  - yarn test
+  - yarn build
+env:
+  - ID=$GATSBY_AWS_KEY
+  - SECRET=$GATSBY_AWS_SECRET_KEY
+deploy:
+  provider: s3
+  access_key_id: ID
+  secret_access_key: SECRET
+  bucket: "downthecode.com"
+  skip_cleanup: true
+  local_dir: build
+on:
+  branch: master

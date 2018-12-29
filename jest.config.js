@@ -14,5 +14,6 @@ module.exports = {
   },
   modulePathIgnorePatterns: ['./node_modules', '/dist/', '/.cache/'],
   moduleFileExtensions: ['js', 'json'],
+  setupFiles: ['./setupTests.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
 };

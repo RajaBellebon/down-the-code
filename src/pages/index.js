@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-// import Image from '../components/image'
 import Layout from '../components/layout';
 import Weather from '../components/weather/Weather';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <h2>Welcome to Down the Code, a website - blog with a bit of everything ...</h2>
+    <h2>
+      Welcome to Down the Code, a website - blog with a bit of everything ...
+    </h2>
     <br />
-    < Weather />
+    <Weather />
     <br />
     <p>🏗🏗🏗🏗The site is currently under construction.🏗🏗🏗🏗</p>
     <p>I'll display some images in the meantime.</p>
