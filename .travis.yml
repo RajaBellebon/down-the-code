@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - 8.10.0
+node_js:
+  - "stable"
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3
+  - export PATH="$HOME/.yarn/bin:$PATH"
+cache:
+  - yarn
+  directories:
+    - node_modules
+script:
+  - yarn test
+  - yarn build
+env:
+  - ID=$GATSBY_AWS_KEY
+  - SECRET=$GATSBY_AWS_SECRET_KEY
+deploy:
+  provider: s3
+  access_key_id: ID
+  secret_access_key: SECRET
+  bucket: "downthecode.com"
+  skip_cleanup: true
+  local_dir: build

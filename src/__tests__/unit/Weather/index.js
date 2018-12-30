@@ -1,6 +1,5 @@
 import React from 'react';
 import { mount, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 import cases from 'jest-in-case';
 
 import Weather from './../../../components/weather/Weather';
@@ -8,8 +7,6 @@ import {
   feelingEmoji,
   weatherEmoji,
 } from './../../../components/weather/helper';
-
-configure({ adapter: new Adapter() });
 
 cases(
   'Weather Feeling Function',
@@ -57,7 +54,13 @@ describe('Weather Components', () => {
   test('Weather component should render', () => {
     expect(wrapper).toBeDefined();
   });
-  test('Weather component should match snapshots', () => {
+  test('Weather component should match snapshots when state changes', () => {
+    wrapper.setState({
+      Country: 'AU',
+      Name: 'Randwick',
+      Lat: -33.9139319,
+      Long: 151.2423863,
+    });
     expect(wrapper).toMatchSnapshot();
   });
 });
