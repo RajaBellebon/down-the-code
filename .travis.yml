@@ -20,3 +20,6 @@ deploy:
   bucket: "downthecode.com"
   skip_cleanup: true
   local_dir: build
+  branches:
+    only:
+      - master
