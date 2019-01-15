@@ -11,8 +11,7 @@ script:
   - yarn test
   - yarn build
 env:
-  - ID=$GATSBY_AWS_KEY
-  - SECRET=$GATSBY_AWS_SECRET_KEY
+  - ID=$GATSBY_AWS_KEY SECRET=$GATSBY_AWS_SECRET_KEY
 deploy:
   provider: s3
   access_key_id: ID
