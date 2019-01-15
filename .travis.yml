@@ -16,4 +16,4 @@ deploy:
   secret_access_key: $GATSBY_AWS_SECRET_KEY
   bucket: "downthecode.com"
   skip_cleanup: true
-  local_dir: build
+  local_dir: public
