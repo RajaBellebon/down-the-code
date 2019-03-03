@@ -21,7 +21,7 @@ export default class Weather extends Component {
     this.onPass = this.onPass.bind(this);
   }
   onPass(Lat, Long) {
-    const that = this;
+    let that = this;
     Data.getTemperature(Lat, Long).then(
       function(data) {
         that.setState({
@@ -33,7 +33,7 @@ export default class Weather extends Component {
           TempMax: data.main.temp_max,
           Sunrise: data.sys.sunrise,
           Sunset: data.sys.sunset,
-          Weather: data.weather[0],
+          Weather: data.weather[''],
           Name: data.name,
         });
       },

@@ -4,10 +4,12 @@ const OPEN_WEATHER_MAP_URL = `http://api.openweathermap.org/data/2.5/weather?&un
   process.env.GATSBY_WEATHER_KEY
 }`;
 
+console.log(OPEN_WEATHER_MAP_URL);
 const getTemperature = (Lat, Long) => {
   const requestUrl = `${OPEN_WEATHER_MAP_URL}&lat=${Lat}&lon=${Long}`;
   return axios.get(requestUrl).then(
     function(res) {
+      console.log(res.data);
       if (res.data.cod && res.data.message) {
         throw new Error(res.data.message);
       } else {
