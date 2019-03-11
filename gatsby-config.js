@@ -1,6 +1,28 @@
 module.exports = {
   siteMetadata: {
     title: 'Down the Code',
+    menuLinks: [
+      {
+        name: 'Home',
+        link: '/',
+      },
+      {
+        name: 'Travels',
+        link: '/page-2',
+      },
+      {
+        name: 'Data projects',
+        link: '/page-3',
+      },
+      {
+        name: 'Blogs',
+        link: '/page-4',
+      },
+      {
+        name: 'About us',
+        link: '/page-5',
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -30,4 +52,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-}
+};

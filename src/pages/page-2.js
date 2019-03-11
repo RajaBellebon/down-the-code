@@ -1,38 +1,42 @@
 import React from 'react';
-import { Link } from 'gatsby';
-// import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 
-const Travel = () => (
+const Travel = ({ data }) => (
   <Layout>
-    <h2>Nepal</h2>
-    <p>Let's put some nice pics from our recent travel</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      {/* {data.allFile.edges.filter(img =>img.node.name === 'three60').map(img => {
-      return <Img fluid={img.node.childImageSharp.fluid} key={img.node.name}/>
-      })} */}
+    <h2>Nepal: Everest Base Camp</h2>
+    <p>Let's put some nice pics from our recent travel in Nepal</p>
+    <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
+      {data.allFile.edges
+        .filter(img => ['tulec', 'g-r', 'Coogee'].indexOf(img.node.name) === -1)
+        .map(img => {
+          return (
+            <Img fluid={img.node.childImageSharp.fluid} key={img.node.name} />
+          );
+        })}
     </div>
-    <Link to="/">Go back to the homepage</Link>
-    <br />
-    <Link to="/page-3/">Mountain</Link>
-    <br />
-    <Link to="/page-4/">Design System</Link>
-    <br />
-    <Link to="/page-5/">About us</Link>
   </Layout>
 );
 
 export default Travel;
 
-// export const pageQuery = graphql`
-//   query page2Query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-
-//     ...Files
-//   }
-// `;
+export const query = graphql`
+  query AllFiles {
+    # the filter is usefull if you have multiple source-filesystem instances
+    # the name "images" is set in the gatsby-config
+    allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          name
+        }
+      }
+    }
+  }
+`;

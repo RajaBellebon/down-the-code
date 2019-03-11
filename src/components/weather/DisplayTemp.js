@@ -15,7 +15,6 @@ export default class DisplayTemp extends Component {
       Weather,
       Name,
     } = this.props;
-
     if (Temp === 'Loading') {
       return <div className="loading">Loading Your Local Weather...</div>;
     } else {

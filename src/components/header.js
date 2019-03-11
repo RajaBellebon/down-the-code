@@ -2,21 +2,22 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, menuLinks }) => (
   <div
     style={{
-      marginBottom: '1.45rem',
-      backgroundColor: 'rgba(169, 222, 249, 1)',
+      background: '#0E0B16',
+      marginBottom: '3rem',
+      borderBottom: '2px solid #e6e6e6',
     }}
   >
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 980,
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, textAlign: 'center', fontSize: '40px' }}>
         <Link
           to="/"
           style={{
@@ -27,6 +28,15 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    <nav>
+      <ul>
+        {menuLinks.map(link => (
+          <li key={link.name}>
+            <Link to={link.link}>{link.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   </div>
 );
 

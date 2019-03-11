@@ -8,6 +8,7 @@ const getTemperature = (Lat, Long) => {
   const requestUrl = `${OPEN_WEATHER_MAP_URL}&lat=${Lat}&lon=${Long}`;
   return axios.get(requestUrl).then(
     function(res) {
+      console.log(res.data);
       if (res.data.cod && res.data.message) {
         throw new Error(res.data.message);
       } else {

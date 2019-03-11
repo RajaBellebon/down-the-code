@@ -21,7 +21,7 @@ export default class Weather extends Component {
     this.onPass = this.onPass.bind(this);
   }
   onPass(Lat, Long) {
-    const that = this;
+    let that = this;
     Data.getTemperature(Lat, Long).then(
       function(data) {
         that.setState({
@@ -38,7 +38,7 @@ export default class Weather extends Component {
         });
       },
       function(errorMessage) {
-        alert(errorMessage);
+        console.error(errorMessage);
       },
     );
   }
