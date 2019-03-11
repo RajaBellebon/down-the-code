@@ -9,7 +9,8 @@ const Sidebar = props => (
       marginBottom: '25px',
     }}
   >
-    <strong>{props.title}.</strong> {props.description}
+    <strong>{props.title}: </strong>
+    <a href={props.href}>{props.description} </a>
   </div>
 );
 

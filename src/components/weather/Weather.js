@@ -33,12 +33,12 @@ export default class Weather extends Component {
           TempMax: data.main.temp_max,
           Sunrise: data.sys.sunrise,
           Sunset: data.sys.sunset,
-          Weather: data.weather[''],
+          Weather: data.weather[0],
           Name: data.name,
         });
       },
       function(errorMessage) {
-        alert(errorMessage);
+        console.error(errorMessage);
       },
     );
   }

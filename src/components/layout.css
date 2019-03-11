@@ -4,6 +4,14 @@ $color3: rgba(255, 201, 201, 1); 'Bubble gum'
 $color4: rgba(237, 231, 177, 1); 'Pale goldenrod'
 $color5: rgba(169, 222, 249, 1); 'non-photo blue' */
 
+.github-btn {
+  flex-shrink: 0;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
 nav {
   text-align: center;
   margin: 20px 0 0;

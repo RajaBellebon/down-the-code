@@ -10,7 +10,7 @@ const Travel = ({ data }) => (
     <p>Let's put some nice pics from our recent travel in Nepal</p>
     <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
       {data.allFile.edges
-        .filter(img => ['tulec', 'g-r'].indexOf(img.node.name) === -1)
+        .filter(img => ['tulec', 'g-r', 'Coogee'].indexOf(img.node.name) === -1)
         .map(img => {
           return (
             <Img fluid={img.node.childImageSharp.fluid} key={img.node.name} />

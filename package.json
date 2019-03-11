@@ -5,6 +5,9 @@
   "author": "Raja Bellebon <rbellebon@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.5",
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.18.0",
     "dotenv": "^6.2.0",
     "gatsby": "^2.0.53",
@@ -23,6 +26,7 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
+    "reactstrap": "^7.1.0",
     "typography": "^0.16.18"
   },
   "keywords": [

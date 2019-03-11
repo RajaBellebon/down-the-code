@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Weather from '../components/weather/Weather';
+import Coogee from '../images/Coogee.png';
 
 const IndexPage = () => (
   <Layout>
@@ -12,8 +13,11 @@ const IndexPage = () => (
     <br />
     <Weather />
     <br />
-    <p>🏗🏗🏗🏗The site is currently under construction.🏗🏗🏗🏗</p>
-    <p>DISPLAY AN IMAGE</p>
+    <h3>🏗🏗🏗The site is currently under construction.🏗🏗🏗</h3>
+    <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
+      <img src={Coogee} alt="Coogee" />
+      <p>Coogee Beach at Sunrise</p>
+    </div>
   </Layout>
 );
 
