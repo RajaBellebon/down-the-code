@@ -6,4 +6,4 @@ This is a playground, `in-progress` website / blog using Gatsby, nodejs, js and 
 
 http://downthecode.com/
 
-![Awesome](https://media.giphy.com/media/NsBknNwmmWE8WU1q2U/giphy.gif)
+![Awesome](/awesome.gif)
