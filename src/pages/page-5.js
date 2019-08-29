@@ -1,17 +1,42 @@
 import React from 'react';
-import GR from '../images/g-r.png';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 
-const FifthPage = () => (
+const NZ = ({ data }) => (
   <Layout>
-    <h2>About us</h2>
+    <h2>New Zealand: Queenstown</h2>
+    <p>Trekking, Mountains, Lake</p>
     <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
-      <img src={GR} alt="Giulia and Raja" />
+      {data.allFile.edges
+        .filter(img => img.node.name.includes('zealand'))
+        .map(img => {
+          return (
+            <Img fluid={img.node.childImageSharp.fluid} key={img.node.name} />
+          );
+        })}
     </div>
-    <div>Raja</div>
-    <div>Giulia</div>
   </Layout>
 );
 
-export default FifthPage;
+export default NZ;
+
+// export const query = graphql`
+//   query AllFiles {
+//     # the filter is usefull if you have multiple source-filesystem instances
+//     # the name "images" is set in the gatsby-config
+//     allFile(filter: { sourceInstanceName: { eq: "nz" } }) {
+//       edges {
+//         node {
+//           childImageSharp {
+//             fluid(maxWidth: 800) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//           name
+//         }
+//       }
+//     }
+//   }
+// `;

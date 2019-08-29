@@ -50,7 +50,9 @@ export default class DisplayTemp extends Component {
                 <td>
                   Sunrise: {sunrise} am - Sunset: {sunset} pm
                 </td>
-                <td>In Sydney, it is currently: {Temp}°C</td>
+                <td>
+                  In {Name}, it is currently: {Temp}°C
+                </td>
                 <td>
                   The temperature will be between {TempMin}°C - {TempMax}°C
                 </td>

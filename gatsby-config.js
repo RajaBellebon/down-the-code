@@ -7,20 +7,32 @@ module.exports = {
         link: '/',
       },
       {
-        name: 'Travels',
+        name: 'Nepal',
         link: '/page-2',
       },
       {
-        name: 'Data projects',
+        name: 'Wedding',
         link: '/page-3',
       },
       {
-        name: 'Blogs',
+        name: 'Western australia',
         link: '/page-4',
       },
       {
-        name: 'About us',
+        name: 'New zealand',
         link: '/page-5',
+      },
+      {
+        name: 'Data projects',
+        link: '/page-6',
+      },
+      {
+        name: 'Blogs',
+        link: '/page-7',
+      },
+      {
+        name: 'About us',
+        link: '/page-8',
       },
     ],
   },
@@ -29,8 +41,29 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `nepal`,
+        path: `${__dirname}/src/images/nepal`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `wedding`,
+        path: `${__dirname}/src/images/wed`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `wa`,
+        path: `${__dirname}/src/images/wa`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `nz`,
+        path: `${__dirname}/src/images/nz`,
       },
     },
     'gatsby-transformer-sharp',
