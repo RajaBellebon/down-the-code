@@ -19,6 +19,7 @@
     "gatsby-plugin-sharp": "^2.0.14",
     "gatsby-plugin-typography": "^2.2.2",
     "gatsby-source-filesystem": "^2.0.12",
+    "gatsby-transformer-remark": "^2.6.19",
     "gatsby-transformer-sharp": "^2.1.8",
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0",

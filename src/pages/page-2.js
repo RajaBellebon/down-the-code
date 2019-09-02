@@ -21,7 +21,7 @@ const Nepal = ({ data }) => (
 export default Nepal;
 
 export const query = graphql`
-  query AllFiles {
+  query NepalQuery {
     # the filter is usefull if you have multiple source-filesystem instances
     # the name "images" is set in the gatsby-config
     allFile(filter: { sourceInstanceName: { eq: "nepal" } }) {

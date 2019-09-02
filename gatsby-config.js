@@ -15,11 +15,11 @@ module.exports = {
         link: '/page-3',
       },
       {
-        name: 'Western australia',
+        name: 'Western Australia',
         link: '/page-4',
       },
       {
-        name: 'New zealand',
+        name: 'New Zealand',
         link: '/page-5',
       },
       {
@@ -49,7 +49,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `wedding`,
-        path: `${__dirname}/src/images/wed`,
+        path: `${__dirname}/src/images/wedding`,
       },
     },
     {
@@ -66,6 +66,14 @@ module.exports = {
         path: `${__dirname}/src/images/nz`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/blogs`,
+        name: `blogs`,
+      },
+    },
+    `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-emotion',
@@ -81,6 +89,7 @@ module.exports = {
         icon: 'src/images/tulec.png', // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

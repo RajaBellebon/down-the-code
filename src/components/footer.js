@@ -16,6 +16,7 @@ class Footer extends React.Component {
               <a href="https://github.com/RajaBellebon/">
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
+              <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js" />
             </Col>
           </Row>
         </Container>
