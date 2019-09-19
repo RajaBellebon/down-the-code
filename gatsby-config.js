@@ -8,10 +8,10 @@ module.exports = {
       },
       {
         name: 'Nepal',
-        link: '/page-2',
+        link: '/nepal',
       },
       {
-        name: 'Wedding',
+        name: 'Shooting',
         link: '/page-3',
       },
       {
@@ -23,16 +23,20 @@ module.exports = {
         link: '/page-5',
       },
       {
-        name: 'Data projects',
+        name: 'Northern Territory',
         link: '/page-6',
       },
       {
-        name: 'Blogs',
+        name: 'Data projects',
         link: '/page-7',
       },
       {
-        name: 'About us',
+        name: 'Blogs',
         link: '/page-8',
+      },
+      {
+        name: 'About us',
+        link: '/page-9',
       },
     ],
   },
@@ -64,6 +68,13 @@ module.exports = {
       options: {
         name: `nz`,
         path: `${__dirname}/src/images/nz`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `nt`,
+        path: `${__dirname}/src/images/nt`,
       },
     },
     {

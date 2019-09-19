@@ -5,9 +5,10 @@ import Nepal from '../../pages/page-2';
 import Wedding from '../../pages/page-3';
 import WA from '../../pages/page-4';
 import NZ from '../../pages/page-5';
-import Data from '../../pages/page-6';
-import Blogs from '../../pages/page-7';
-import AboutUs from '../../pages/page-8';
+import NZ from '../../pages/page-6';
+import Data from '../../pages/page-7';
+import Blogs from '../../pages/page-8';
+import AboutUs from '../../pages/page-9';
 
 cases.skip(
   'Pages',
@@ -18,6 +19,7 @@ cases.skip(
     { name: 'Nepal', component: Nepal },
     { name: 'Wedding', component: Nepal },
     { name: 'NZ', component: NZ },
+    { name: 'NT', component: NT },
     { name: 'WA', component: WA },
     { name: 'About us', component: AboutUs },
     { name: 'Blogs', component: Blogs },

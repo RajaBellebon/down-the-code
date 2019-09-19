@@ -13,7 +13,6 @@ const IndexPage = () => (
     <br />
     <Weather />
     <br />
-    <h3>🏗🏗🏗The site is currently under construction.🏗🏗🏗</h3>
     <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
       <img src={Coogee} alt="Coogee" />
       <p>Coogee Beach at Sunrise</p>

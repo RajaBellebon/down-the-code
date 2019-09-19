@@ -37,6 +37,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "cypress:open": "cypress open",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
@@ -47,6 +48,7 @@
     "babel-core": "^7.0.0-bridge",
     "babel-jest": "^23.6.0",
     "babel-preset-gatsby": "^0.1.6",
+    "cypress": "^3.4.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "enzyme-to-json": "^3.3.5",

@@ -6,8 +6,8 @@ import Layout from '../components/layout';
 
 const Wedding = ({ data }) => (
   <Layout>
-    <h2>Wedding Pictures</h2>
-    <p>Some nice shooting pics!</p>
+    <h2>Wedding costume shooting pics</h2>
+    <p>Some nice pics in Coogee!</p>
     <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
       {data.allFile.edges.map(img => {
         return (

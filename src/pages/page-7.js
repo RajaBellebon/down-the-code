@@ -1,13 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-const Blogs = () => (
+const DataProjects = () => (
   <Layout>
-    <h2>Blogs</h2>
-    <ol>
-      <li>Head to http://downthecode.com/</li>
-    </ol>
+    <h2>Data projects</h2>
+    <h3>🏗🏗🏗This page is currently under construction.🏗🏗🏗</h3>
   </Layout>
 );
 
-export default Blogs;
+export default DataProjects;

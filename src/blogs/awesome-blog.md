@@ -1,7 +1,7 @@
 ---
 path: '/blog/awesome-blog'
-date: '2019-08-31'
+date: '2019-09-18'
 title: 'All the recent blogs, I found awesome!'
 ---
 
-# hello
+# Please visit the pages

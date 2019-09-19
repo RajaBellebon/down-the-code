@@ -1,17 +1,14 @@
 import React from 'react';
-import GR from '../images/g-r.png';
-
 import Layout from '../components/layout';
 
-const AboutUs = () => (
+const Blogs = () => (
   <Layout>
-    <h2>About us</h2>
-    <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
-      <img src={GR} alt="Giulia and Raja" />
-    </div>
-    <div>Raja</div>
-    <div>Giulia</div>
+    <h2>Blogs</h2>
+    <h3>🏗🏗🏗This page is currently under construction.🏗🏗🏗</h3>
+    <ol>
+      <li>Head to http://downthecode.com/</li>
+    </ol>
   </Layout>
 );
 
-export default AboutUs;
+export default Blogs;
