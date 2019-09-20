@@ -1,14 +1,18 @@
 language: node_js
 node_js:
-  - '8'
+  - '10'
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.17.0
   - export PATH="$HOME/.yarn/bin:$PATH"
 cache:
   directories:
     - node_modules
+before_script:
+  - yarn start & sleep 7
+  - yarn add xvfb
 script:
   - yarn test
+  - yarn test:e2e
   - yarn build
 deploy:
   provider: s3
