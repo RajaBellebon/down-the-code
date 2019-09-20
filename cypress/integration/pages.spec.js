@@ -3,8 +3,8 @@ const selector = require('../fixtures/selectors.json');
 const viewport = ['macbook-15', 'iphone-6', 'ipad-2'];
 
 const pages = [''];
-
-describe('DownTheCode', () => {
+//TODO: https://github.com/RajaBellebon/tulec/issues/11
+describe.skip('DownTheCode', () => {
   before(() => {
     cy.visit('http://localhost:8000/');
     cy.title().should('equal', '');

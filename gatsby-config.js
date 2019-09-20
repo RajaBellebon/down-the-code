@@ -11,32 +11,32 @@ module.exports = {
         link: '/nepal',
       },
       {
-        name: 'Shooting',
-        link: '/page-3',
+        name: 'Wedding Shooting',
+        link: '/wedding-shooting',
       },
       {
         name: 'Western Australia',
-        link: '/page-4',
+        link: '/western-australia',
       },
       {
         name: 'New Zealand',
-        link: '/page-5',
+        link: '/new-zealand',
       },
       {
         name: 'Northern Territory',
-        link: '/page-6',
+        link: '/northern-territory',
       },
       {
         name: 'Data projects',
-        link: '/page-7',
+        link: '/data-projects',
       },
       {
         name: 'Blogs',
-        link: '/page-8',
+        link: '/blogs',
       },
       {
         name: 'About us',
-        link: '/page-9',
+        link: '/about-us',
       },
     ],
   },

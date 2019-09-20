@@ -11,6 +11,10 @@ module.exports = {
   ],
   transform: {
     '^.+\\.js$': 'babel-jest',
+    '.+\\.(css|styl|less|sass|scss)$': 'jest-transform-css',
+  },
+  moduleNameMapper: {
+    '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/fileMock.js',
   },
   modulePathIgnorePatterns: ['./node_modules', '/dist/', '/.cache/'],
   moduleFileExtensions: ['js', 'json'],

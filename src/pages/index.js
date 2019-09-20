@@ -13,7 +13,10 @@ const IndexPage = () => (
     <br />
     <Weather />
     <br />
-    <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
+    <div
+      className="image"
+      style={{ maxWidth: '800px', marginBottom: '1.45rem' }}
+    >
       <img src={Coogee} alt="Coogee" />
       <p>Coogee Beach at Sunrise</p>
     </div>

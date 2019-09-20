@@ -2,7 +2,9 @@
 
 # Welcome to tulec, the git repository for downthecode.com :sparkles:
 
-This is a playground, `in-progress` website / blog using Gatsby, nodejs, js and connected to AWS.
+This website / blog is powered by Gatsby, deployed to AWS and tested using Jest and Cypress.
+
+The site is still `in-progress`.
 
 http://downthecode.com/
 

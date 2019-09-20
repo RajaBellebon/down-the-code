@@ -1,28 +1,43 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import cases from 'jest-in-case';
-import Nepal from '../../pages/page-2';
-import Wedding from '../../pages/page-3';
-import WA from '../../pages/page-4';
-import NZ from '../../pages/page-5';
-import NZ from '../../pages/page-6';
-import Data from '../../pages/page-7';
-import Blogs from '../../pages/page-8';
-import AboutUs from '../../pages/page-9';
+import { Nepal } from '../../pages/nepal';
+import Wedding from '../../pages/wedding-shooting';
+import WA from '../../pages/western-australia';
+import NZ from '../../pages/new-zealan';
+import NT from '../../pages/northern-territory';
+import Data from '../../pages/data-projects';
+import Blogs from '../../pages/blogs';
+import AboutUs from '../../pages/about-us';
+// TODO: https://github.com/RajaBellebon/tulec/issues/14
+// cases(
+//   'Pages',
+//   opts => {
+//     expect((opts.component)).toBeDefined();
+//   },
+//   [
+//     { name: 'Nepal', component: mount(<Nepal/>) },
+//     // { name: 'Wedding', component: Nepal },
+//     // { name: 'NZ', component: NZ },
+//     // { name: 'NT', component: NT },
+//     // { name: 'WA', component: WA },
+//     // { name: 'About us', component: AboutUs },
+//     // { name: 'Blogs', component: Blogs },
+//     // { name: 'Data projects', component: Data },
+//   ],
+// );
 
-cases.skip(
-  'Pages',
-  opts => {
-    expect(mount(opts.component)).toBeDefined();
+const mockedData = {
+  allFile: {
+    edges: [
+      {
+        node: { childImageSharp: {} },
+        name: '',
+      },
+    ],
   },
-  [
-    { name: 'Nepal', component: Nepal },
-    { name: 'Wedding', component: Nepal },
-    { name: 'NZ', component: NZ },
-    { name: 'NT', component: NT },
-    { name: 'WA', component: WA },
-    { name: 'About us', component: AboutUs },
-    { name: 'Blogs', component: Blogs },
-    { name: 'Data projects', component: Data },
-  ],
-);
+};
+
+test('test', () => {
+  const wrapper = mount(<Nepal data={mockedData} />);
+});
