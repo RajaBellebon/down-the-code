@@ -1,16 +1,29 @@
 language: node_js
 node_js:
-  - '8'
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3
-  - export PATH="$HOME/.yarn/bin:$PATH"
+  - '10'
+
+addons:
+  apt:
+    packages:
+      # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
+      - libgconf-2-4
+
+## Cache NPM folder and Cypress binary
+## to avoid downloading Cypress again and again
 cache:
   directories:
+    - ~/.npm
+    - ~/.cache
     - node_modules
+   
 script:
   - yarn test
+  - yarn test:e2e:ci
   - yarn build
+
 deploy:
+  on:
+    branch: master
   provider: s3
   access_key_id: $GATSBY_AWS_KEY
   secret_access_key: $GATSBY_AWS_SECRET_KEY

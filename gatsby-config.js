@@ -7,20 +7,36 @@ module.exports = {
         link: '/',
       },
       {
-        name: 'Travels',
-        link: '/page-2',
+        name: 'Nepal',
+        link: '/nepal',
+      },
+      {
+        name: 'Wedding Shooting',
+        link: '/wedding-shooting',
+      },
+      {
+        name: 'Western Australia',
+        link: '/western-australia',
+      },
+      {
+        name: 'New Zealand',
+        link: '/new-zealand',
+      },
+      {
+        name: 'Northern Territory',
+        link: '/northern-territory',
       },
       {
         name: 'Data projects',
-        link: '/page-3',
+        link: '/data-projects',
       },
       {
         name: 'Blogs',
-        link: '/page-4',
+        link: '/blogs',
       },
       {
         name: 'About us',
-        link: '/page-5',
+        link: '/about-us',
       },
     ],
   },
@@ -29,10 +45,46 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `nepal`,
+        path: `${__dirname}/src/images/nepal`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `wedding`,
+        path: `${__dirname}/src/images/wedding`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `wa`,
+        path: `${__dirname}/src/images/wa`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `nz`,
+        path: `${__dirname}/src/images/nz`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `nt`,
+        path: `${__dirname}/src/images/nt`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/blogs`,
+        name: `blogs`,
+      },
+    },
+    `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-emotion',
@@ -48,6 +100,7 @@ module.exports = {
         icon: 'src/images/tulec.png', // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
