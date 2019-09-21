@@ -10,19 +10,20 @@ import cases from 'jest-in-case';
 // import Blogs from '../../pages/blogs';
 // import AboutUs from '../../pages/about-us';
 // TODO: https://github.com/RajaBellebon/tulec/issues/14
-cases.skip(
-  'Pages',
-  opts => {
-    expect(opts.component).toBeDefined();
-  },
-  [
-    //  { name: 'Nepal', component: mount(<Nepal/>) },
-    // { name: 'Wedding', component: Wedding },
-    // { name: 'NZ', component: NZ },
-    // { name: 'NT', component: NT },
-    // { name: 'WA', component: WA },
-    // { name: 'About us', component: AboutUs },
-    // { name: 'Blogs', component: Blogs },
-    // { name: 'Data projects', component: Data },
-  ],
-);
+// cases.skip(
+//   'Pages',
+//   opts => {
+//     expect(opts.component).toBeDefined();
+//   },
+//   [
+//     //  { name: 'Nepal', component: mount(<Nepal/>) },
+//     // { name: 'Wedding', component: Wedding },
+//     // { name: 'NZ', component: NZ },
+//     // { name: 'NT', component: NT },
+//     // { name: 'WA', component: WA },
+//     // { name: 'About us', component: AboutUs },
+//     // { name: 'Blogs', component: Blogs },
+//     // { name: 'Data projects', component: Data },
+//   ],
+// );
+test('Not ready yet', () => expect(true).toBeTruthy());
