@@ -42,6 +42,7 @@
     "format": "prettier --write \"src/**/*.js\"",
     "test": "jest",
     "test:e2e": "cypress run",
+    "test:e2e:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test develop 8000 test:e2e",
     "test:e2e:watch": "cypress open"
   },
   "devDependencies": {
@@ -58,7 +59,8 @@
     "jest-transform-css": "^2.0.0",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.2",
-    "react-media": "^1.9.2"
+    "react-media": "^1.9.2",
+    "start-server-and-test": "^1.10.2"
   },
   "husky": {
     "hooks": {
