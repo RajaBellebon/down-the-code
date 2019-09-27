@@ -11,10 +11,10 @@ class Footer extends React.Component {
           <Row>
             <Col sm="12" md={{ size: 6, offset: 3 }}>
               <a href="https://www.linkedin.com/in/raja-bellebon-47725436/">
-                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                <FontAwesomeIcon icon={faLinkedin} size="s" />
               </a>
               <a href="https://github.com/RajaBellebon/">
-                <FontAwesomeIcon icon={faGithub} size="lg" />
+                <FontAwesomeIcon icon={faGithub} size="s" />
               </a>
               <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js" />
             </Col>

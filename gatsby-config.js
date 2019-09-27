@@ -77,13 +77,14 @@ module.exports = {
         path: `${__dirname}/src/images/nt`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/blogs`,
-        name: `blogs`,
-      },
-    },
+    // https://github.com/RajaBellebon/tulec/issues/16
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/src/blogs`,
+    //     name: `blogs`,
+    //   },
+    // },
     `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
