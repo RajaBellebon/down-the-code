@@ -75,17 +75,27 @@ const Layout = ({ children }) => (
                 </div>
                 <div style={{ flex: 1 }}>
                   <Sidebar
-                    title="Recent Event"
+                    title="Event"
+                    description="Visual Regression in a Frontend Mono-repository From 0 to 1"
+                    href="https://applitools.com/event/visual-regression-in-a-frontend-mono-repository-from-0-to-1/"
+                  />
+                  <Sidebar
+                    title="Event"
                     description="Code♥Design"
                     href="https://codeheartdesign.com/"
                   />
+                   <Sidebar
+                    title="Blog"
+                    description="Javascript"
+                    href="https://medium.com/javascript-scene/a-functional-programmers-introduction-to-javascript-composing-software-d670d14ede30"
+                  />
                   <Sidebar
-                    title="Recent Blog"
+                    title="Blog"
                     description="How to write clean code"
                     href="https://medium.com/programming-hacks/basics-of-writing-clean-code-c1e79f3315d3"
                   />
                   <Sidebar
-                    title="Recent Linkedin Post"
+                    title="Linkedin Post"
                     description="Atlaskit repository visualisation"
                     href="https://www.linkedin.com/feed/update/urn:li:activity:6508201456963846144"
                   />

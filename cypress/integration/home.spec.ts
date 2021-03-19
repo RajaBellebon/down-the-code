@@ -1,10 +1,11 @@
 const selector = require('../fixtures/selectors.json');
+const baseUrl = require('../../cypress.json').baseUrl;
 
 const viewport = ['macbook-15', 'iphone-6', 'ipad-2'];
 
 describe('DownTheCode Home Page', () => {
   before(() => {
-    cy.visit('http://localhost:8000/');
+    cy.visit(baseUrl);
     cy.title().should('equal', 'Down the Code');
     cy.get('h1').should('contain', 'Down the Code');
   });
@@ -14,7 +15,7 @@ describe('DownTheCode Home Page', () => {
       cy.viewport(view);
     });
 
-    it(`Should display the home page in the view: ${view}`, () => {
+    it.only(`Should display the home page in the view: ${view}`, () => {
       cy.get(selector.subtitle)
         .should('contain', 'Welcome to Down the Code!')
         .get(selector.paragraph)
@@ -22,15 +23,14 @@ describe('DownTheCode Home Page', () => {
           'contain',
           'You may find couple of things on this website from blogs to pictures or data projects. Enjoy!',
         )
-        // TODO: https://github.com/RajaBellebon/tulec/issues/12
-        // .get(selector.weatherWidget)
-        // .should('.be.visible')
-        // .get(selector.image)
-        // .should('.exist')
+        .get(selector.weatherWidget)
+        .should('.be.visible')
+        .get(selector.image)
+        .should('be.visible')
         .get(selector.imageParagraph)
-        .should('contain', 'Coogee Beach at Sunrise');
-      // .get(selector.foother)
-      // .should('.exist')
+        .should('contain', 'Coogee Beach at Sunrise')
+        .get(selector.foother)
+        .should('be.visible');
     });
   });
 });

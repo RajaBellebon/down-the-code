@@ -27,12 +27,28 @@ module.exports = {
         link: '/northern-territory',
       },
       {
-        name: 'Data projects',
-        link: '/data-projects',
+        name: 'Borneo',
+        link: '/borneo',
       },
       {
-        name: 'Blogs',
-        link: '/blogs',
+        name: 'Greece',
+        link: '/greece',
+      },
+      {
+        name: 'Israel',
+        link: '/israel',
+      },
+      {
+        name: 'Scotland',
+        link: '/scotland',
+      },
+      {
+        name: 'Brussels',
+        link: '/brussels',
+      },
+      {
+        name: 'India',
+        link: '/india',
       },
       {
         name: 'About us',
@@ -77,14 +93,14 @@ module.exports = {
         path: `${__dirname}/src/images/nt`,
       },
     },
-    // https://github.com/RajaBellebon/tulec/issues/16
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/src/blogs`,
-    //     name: `blogs`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `jsx`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
+    },
     `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
