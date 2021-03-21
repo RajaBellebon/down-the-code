@@ -1,6 +1,6 @@
 {
   "name": "down-the-code",
-  "description": "Using Gatsby default starter, building a website that displays a bit of everything",
+  "description": "Using Gatsby default starter, building a website that displays pictures of travels",
   "version": "1.0.0",
   "author": "Raja Bellebon <rbellebon@gmail.com>",
   "dependencies": {
@@ -9,7 +9,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "dotenv": "^6.2.0",
     "gatsby": "^3.1.0",
     "gatsby-image": "^3.1.0",

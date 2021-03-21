@@ -1,26 +1,45 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/layout';
-import Weather from '../components/weather/Weather';
-import Coogee from '../images/Coogee.png';
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <h2>Welcome to Down the Code!</h2>
     <p>
-      You may find couple of things on this website from blogs to pictures or
-      data projects. Enjoy!
+      ✈️ Enjoy the pics of our different travels 🗺️!
     </p>
     <br />
-    <Weather />
     <br />
-    <div
-      className="image"
-      style={{ maxWidth: '800px', marginBottom: '1.45rem' }}
-    >
-      <img src={Coogee} alt="Coogee" />
-      <p>Coogee Beach at Sunrise</p>
-    </div>
+      <p>🌅 Coogee Beach at Sunrise 🌅</p>
+      <div style={{ maxWidth: '800px', marginBottom: '1.45rem' }}>
+      {data.allFile.edges.map(img => {
+        console.log({img})
+        return (
+          <Img fluid={img.node.childImageSharp.fluid} key={img.node.name} />
+        );
+      })}
+      </div>
   </Layout>
 );
 
 export default IndexPage;
+
+export const query = graphql`
+  query HomeQuery {
+    # the filter is useful if you have multiple source-filesystem instances
+    # the name "images" is set in the gatsby-config
+    allFile(filter: { sourceInstanceName: { eq: "home" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          name
+        }
+      }
+    }
+  }
+`;

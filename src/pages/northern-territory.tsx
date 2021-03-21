@@ -22,7 +22,7 @@ export default NT;
 
 export const query = graphql`
   query NtQuery {
-    # the filter is usefull if you have multiple source-filesystem instances
+    # the filter is useful if you have multiple source-filesystem instances
     # the name "images" is set in the gatsby-config
     allFile(filter: { sourceInstanceName: { eq: "nt" } }) {
       edges {

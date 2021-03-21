@@ -10,6 +10,7 @@ $color5: rgba(169, 222, 249, 1); 'non-photo blue' */
 
 .footer {
   flex-shrink: 0;
+  text-align: center;
 }
 
 nav {

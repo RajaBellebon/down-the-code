@@ -22,7 +22,7 @@ export default NZ;
 
 export const query = graphql`
   query NzQuery {
-    # the filter is usefull if you have multiple source-filesystem instances
+    # the filter is useful if you have multiple source-filesystem instances
     # the name "images" is set in the gatsby-config
     allFile(filter: { sourceInstanceName: { eq: "nz" } }) {
       edges {

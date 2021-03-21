@@ -94,6 +94,48 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `india`,
+        path: `${__dirname}/src/images/india`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `home`,
+        path: `${__dirname}/src/images/home`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `bruxelles`,
+        path: `${__dirname}/src/images/bruxelles`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `israel`,
+        path: `${__dirname}/src/images/israel`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `scotland`,
+        path: `${__dirname}/src/images/scotland`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `greece`,
+        path: `${__dirname}/src/images/greece`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true, // defaults to false
