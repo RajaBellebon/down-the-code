@@ -2,7 +2,18 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Header = ({ siteTitle, menuLinks }) => (
+type MenuLink = {
+  link: string;
+  name: string;
+};
+
+const Header = ({
+  siteTitle,
+  menuLinks,
+}: {
+  siteTitle: string;
+  menuLinks: MenuLink[];
+}) => (
   <div
     style={{
       background: '#0E0B16',

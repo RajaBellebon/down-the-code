@@ -17,6 +17,9 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
+# Ignore gatsby static queries
+.testing-static-queries.json
+
 # nyc test coverage
 .nyc_output
 

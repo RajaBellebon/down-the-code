@@ -1,3 +1,9 @@
+const transformNodeModules = [
+  'react-syntax-highlighter', // uses dynamic imports which are not valid in node
+  'ts-is-defined', // exports ESM in the package.json browser field
+  'ts-tiny-invariant', // exports ESM in the package.json browser field
+];
+
 module.exports = {
   testMatch: [`${__dirname}/**/__tests__/**/*.(js|tsx|ts)`],
   // NOTE: all options with 'pattern' in the name are javascript regex's that will match if they match
@@ -10,14 +16,19 @@ module.exports = {
     '/__tests__\\/.*?\\/_.*?',
   ],
   transform: {
-    '^.+\\.js$': 'babel-jest',
+    '\\.(ts|tsx)$': 'ts-jest',
     '.+\\.(css|styl|less|sass|scss)$': 'jest-transform-css',
   },
+  // don't transform any files under node_modules except those defined in transformNodeModules
+  transformIgnorePatterns: [
+    `\\/node_modules\\/(?!${transformNodeModules.join('|')})`,
+  ],
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/fileMock.js',
   },
   modulePathIgnorePatterns: ['./node_modules', '/dist/', '/.cache/'],
-  moduleFileExtensions: ['js', 'json'],
-  setupFiles: ['./setupTests.js'],
+  moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
+  setupFiles: ['./setupTests.ts'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
+  testEnvironment: 'jest-environment-jsdom-sixteen',
 };

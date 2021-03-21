@@ -9,7 +9,7 @@ import Footer from './footer';
 import Sidebar from './sidebar';
 import './layout.css';
 
-const Layout = ({ children }) => (
+const Layout = ({ children }: { children: any }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
           meta={[
             {
               name: 'description',
-              content: 'Down the Code Blog and Pictures.',
+              content: 'Down the Code - Travel Pictures.',
             },
             { name: 'keywords', content: 'Coding, Trekking, Pictures.' },
           ]}
@@ -42,13 +42,13 @@ const Layout = ({ children }) => (
           menuLinks={data.site.siteMetadata.menuLinks}
           siteTitle={data.site.siteMetadata.title}
         />
-        <Media query={{ maxWidth: 848 }}>
+        <Media query={{ MaxWidth: 848 }}>
           {matches =>
             matches ? (
               <div
                 style={{
                   margin: '0 auto',
-                  maxWidth: 980,
+                  width: 980,
                   display: 'flex',
                   flexDirection: 'row',
                   justifyContent: 'space-between',
@@ -62,7 +62,7 @@ const Layout = ({ children }) => (
               <div
                 style={{
                   margin: '0 auto',
-                  maxWidth: 980,
+                  width: 980,
                   display: 'flex',
                   flexDirection: 'row',
                   justifyContent: 'space-between',
@@ -84,7 +84,7 @@ const Layout = ({ children }) => (
                     description="Code♥Design"
                     href="https://codeheartdesign.com/"
                   />
-                   <Sidebar
+                  <Sidebar
                     title="Blog"
                     description="Javascript"
                     href="https://medium.com/javascript-scene/a-functional-programmers-introduction-to-javascript-composing-software-d670d14ede30"

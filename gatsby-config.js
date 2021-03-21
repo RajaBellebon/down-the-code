@@ -43,8 +43,8 @@ module.exports = {
         link: '/scotland',
       },
       {
-        name: 'Brussels',
-        link: '/brussels',
+        name: 'Bruxelles',
+        link: '/bruxelles',
       },
       {
         name: 'India',
@@ -136,6 +136,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `about`,
+        path: `${__dirname}/src/images/about`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true, // defaults to false
@@ -143,6 +150,7 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
+    'gatsby-plugin-testing',
     `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',

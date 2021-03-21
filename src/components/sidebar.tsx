@@ -1,6 +1,12 @@
 import React from 'react';
 
-const Sidebar = props => (
+type Props = {
+  title: string;
+  href: string;
+  description: string;
+};
+
+const Sidebar = (props: Props) => (
   <div
     style={{
       border: '2px solid #e6e6e6',
