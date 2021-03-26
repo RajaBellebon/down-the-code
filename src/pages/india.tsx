@@ -34,7 +34,11 @@ const India = () => {
       <p>Backwaters, Tea Mountains, Elephants 🐘</p>
       {images.map((img: any) => {
         return (
-          <Img fluid={img.node.childImageSharp.fluid}  alt={img.node.name} key={img.node.name} />
+          <Img
+            fluid={img.node.childImageSharp.fluid}
+            alt={img.node.name}
+            key={img.node.name}
+          />
         );
       })}
     </Layout>
