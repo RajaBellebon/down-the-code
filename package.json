@@ -5,6 +5,7 @@
   "author": "Raja Bellebon <rbellebon@gmail.com>",
   "dependencies": {
     "@babel/preset-env": "^7.12.1",
+    "@babel/runtime": "^7.13.10",
     "@emotion/core": "^10.0.5",
     "@emotion/react": "^11.1.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
