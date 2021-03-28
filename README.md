@@ -2,10 +2,11 @@
 
 # Welcome to tulec, the git repository for downthecode.com :sparkles:
 
-This website is powered by Gatsby, deployed to Netlify and tested using Jest and Cypress.
+This website is powered by Gatsby, deployed to Netlify and tested using Cypress.
 
 This site is still `in-progress`.
 
 http://downthecode.com/
 
 ![Awesome](/awesome.gif)
+0-poopl;
