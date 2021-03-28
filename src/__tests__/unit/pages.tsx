@@ -9,6 +9,7 @@ import cases from 'jest-in-case';
 // import Data from '../../pages/data-projects';
 // import Blogs from '../../pages/blogs';
 // import AboutUs from '../../pages/about-us';
+
 // TODO: https://github.com/RajaBellebon/tulec/issues/14
 // cases.skip(
 //   'Pages',

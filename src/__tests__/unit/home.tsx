@@ -1,8 +1,10 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import renderer from 'react-test-renderer';
 import IndexPage from '../../pages/index';
 
-test('Make sure the home page is rendered', () => {
-  const wrapper = mount(<IndexPage />);
-  expect(wrapper).toBeDefined();
+describe('Home', () => {
+  it('renders correctly', () => {
+    const tree = renderer.create(<IndexPage />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

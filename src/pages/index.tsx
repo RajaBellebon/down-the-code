@@ -42,6 +42,8 @@ const IndexPage = () => {
           />
         );
       })}
+      {/* // TODO: to fix
+      // @ts-ignore */}
       <center>🌅 Coogee Beach at Sunrise 🌅</center>
     </Layout>
   );
