@@ -8,7 +8,7 @@ const getImages = () => {
   const { allFile } = useStaticQuery(
     graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "isreal" } }) {
+        allFile(filter: { sourceInstanceName: { eq: "nepal" } }) {
           edges {
             node {
               childImageSharp {
@@ -30,8 +30,10 @@ const Nepal = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>🇳🇵 Nepal: Everest Base Camp 🇳🇵</h2>
-      <p>⛰️ Let's put some nice pics from our recent travel in Nepal</p>
+      <h2>🇳🇵 Nepal: Everest Base Camp 2018 🇳🇵</h2>
+      <center>
+        ⛰️ Let's put some nice pics from our recent travel in Nepal
+      </center>
 
       {images.map((img: any) => {
         return (

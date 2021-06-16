@@ -8,7 +8,7 @@ const getImages = () => {
   const { allFile } = useStaticQuery(
     graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "isreal" } }) {
+        allFile(filter: { sourceInstanceName: { eq: "nz" } }) {
           edges {
             node {
               childImageSharp {
@@ -30,8 +30,8 @@ const NZ = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>🇳🇿 New Zealand: Queenstown 🇳🇿</h2>
-      <p>🥝 Trekking, Mountains, Lake</p>
+      <h2>🇳🇿 New Zealand: Queenstown 2016 🇳🇿</h2>
+      <center>🥝 Trekking, Mountains, Lake</center>
 
       {images.map((img: any) => {
         return (

@@ -30,8 +30,8 @@ const Wedding = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>💒 Wedding costume shooting pics 💒</h2>
-      <p>Some nice pics in Coogee!</p>
+      <h2>💒 Wedding costume shooting pics 2018 💒</h2>
+      <center>Some nice pics in Coogee!</center>
 
       {images.map((img: any) => {
         return (

@@ -11,7 +11,7 @@ const getImages = () => {
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 800) {
+                fluid(maxWidth: 800, quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -30,8 +30,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <h2>Welcome to Down the Code!</h2>
-      <p>✈️ Enjoy the pics of our different travels 🗺️!</p>
-      <br />
+      <center>✈️ Enjoy the pics of our different travels 🗺️!</center>
       <br />
       {images.map((img: any) => {
         return (

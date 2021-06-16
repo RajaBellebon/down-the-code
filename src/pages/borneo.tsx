@@ -30,8 +30,8 @@ const Borneo = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>🇲🇾 Borneo 🇲🇾</h2>
-      <p>🎋 Junge, Mountains, Trekking, Islands</p>
+      <h2>🇲🇾 Borneo 2017 🇲🇾</h2>
+      <center>🎋 Junge, Mountains, Trekking, Islands</center>
       {images.map((img: any) => {
         return (
           <Img

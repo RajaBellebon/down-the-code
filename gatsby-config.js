@@ -117,6 +117,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `borneo`,
+        path: `${__dirname}/src/images/borneo`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `israel`,
         path: `${__dirname}/src/images/israel`,
       },

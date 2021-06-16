@@ -30,8 +30,8 @@ const NT = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2> 🇦🇺 Northern Territory: Larapinta trek 🇦🇺</h2>
-      <p>🏜️ Trekking, Hills, Desert</p>
+      <h2>🇦🇺 Northern Territory: Larapinta trek 2019 🇦🇺</h2>
+      <center>🏜️ Trekking, Hills, Desert</center>
 
       {images.map((img: any) => {
         return (

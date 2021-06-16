@@ -12,7 +12,7 @@ const getImages = () => {
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 800) {
+                fluid(maxWidth: 800, quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -30,8 +30,8 @@ const Bruxelles = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>🇧🇪 Bruxelles 🇧🇪</h2>
-      <p>🏛️ Monuments and Grey sky!</p>
+      <h2>🇧🇪 Bruxelles 2011 🇧🇪</h2>
+      <center>🏛️ Monuments and Grey sky!</center>
       {images.map((img: any) => {
         return (
           <Img

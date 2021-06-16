@@ -30,8 +30,8 @@ const Scotland = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿</h2>
-      <p>💧 Cold, Winter, Wind, Loch Ness, Whiskey</p>
+      <h2>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland 2014 🏴󠁧󠁢󠁳󠁣󠁴󠁿</h2>
+      <center>💧 Cold, Winter, Wind, Loch Ness, Whiskey</center>
 
       {images.map((img: any) => {
         return (

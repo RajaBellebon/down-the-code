@@ -12,7 +12,7 @@ const getImages = () => {
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 800) {
+                fluid(maxWidth: 800, quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -30,8 +30,8 @@ const India = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>🇮🇳 India: Delhi &amp; Kerala 🇮🇳</h2>
-      <p>Backwaters, Tea Mountains, Elephants 🐘</p>
+      <h2>🇮🇳 India: Kerala 2010 🇮🇳</h2>
+      <center>Backwaters, Tea Mountains, Elephants 🐘</center>
       {images.map((img: any) => {
         return (
           <Img

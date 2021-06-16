@@ -30,8 +30,8 @@ const WA = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>🇦🇺 Broome: Western Australia 🇦🇺</h2>
-      <p>Cap L'Eveque and Cable Beach 🏖️</p>
+      <h2>🇦🇺 Broome: Western Australia 2019 🇦🇺</h2>
+      <center>Cap L'Eveque and Cable Beach 🏖️</center>
 
       {images.map((img: any) => {
         return (

@@ -12,7 +12,7 @@ const getImages = () => {
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 800) {
+                fluid(maxWidth: 800, quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -30,8 +30,8 @@ const Greece = () => {
   const images = getImages();
   return (
     <Layout>
-      <h2>🇬🇷 Greece: Rhodos Island 🇬🇷</h2>
-      <p>Chill, Landscape and Island Lifestyle 🏝️</p>
+      <h2>🇬🇷 Greece: Rhodos Island 2013 🇬🇷</h2>
+      <center>Chill, Landscape and Island Lifestyle 🏝️</center>
 
       {images.map((img: any) => {
         return (

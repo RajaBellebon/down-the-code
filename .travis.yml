@@ -17,6 +17,5 @@ cache:
     - node_modules
    
 script:
-  - yarn test
   - yarn test:e2e:ci
   - yarn build
