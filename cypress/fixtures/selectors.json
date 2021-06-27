@@ -1,8 +1,0 @@
-{
-  "subtitle": "h2",
-  "paragraph": "p",
-  "weatherWidget": ".display-weather",
-  "image": ".image",
-  "imageParagraph": ".image p",
-  "foother": "footer"
-}
