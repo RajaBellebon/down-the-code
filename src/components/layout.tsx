@@ -42,7 +42,7 @@ const Layout = ({ children }: { children: any }) => (
           menuLinks={data.site.siteMetadata.menuLinks}
           siteTitle={data.site.siteMetadata.title}
         />
-        <Media query={{ MaxWidth: 848 }}>
+        <Media query={{ maxWidth: 848 }}>
           {matches =>
             matches ? (
               <div
@@ -62,7 +62,7 @@ const Layout = ({ children }: { children: any }) => (
               <div
                 style={{
                   margin: '0 auto',
-                  width: 980,
+                  maxWidth: 980,
                   display: 'flex',
                   flexDirection: 'row',
                   justifyContent: 'space-between',
