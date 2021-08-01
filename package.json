@@ -38,7 +38,6 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
     "typecheck": "tsc --noEmit --project tsconfig.json",
-    "test": "jest",
     "test:e2e": "cypress run",
     "test:e2e:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test develop 8000 test:e2e",
     "test:e2e:watch": "cypress open"
