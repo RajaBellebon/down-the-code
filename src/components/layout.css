@@ -8,6 +8,14 @@ h2 {
   text-align: center;
 }
 
+figure {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
+
 .github-btn {
   flex-shrink: 0;
 }

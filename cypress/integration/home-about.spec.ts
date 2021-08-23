@@ -1,8 +1,8 @@
+import { baseUrl } from '../../cypress.json';
 import { selectors } from '../fixtures/selectors';
-import { baseUrl } from '../../cypress';
 
 
-const viewport = ['macbook-15', 'iphone-6', 'ipad-2'];
+const viewports = ['macbook-15', 'iphone-6', 'ipad-2'];
 
 describe('DownTheCode Home Page', () => {
   before(() => {
@@ -11,13 +11,15 @@ describe('DownTheCode Home Page', () => {
     cy.get('h1').should('contain', 'Down the Code');
   });
 
-  viewport.forEach(view => {
+  viewports.forEach(view => {
     before(() => {
       cy.viewport(view);
     });
 
-    it.only(`Should display the home page in the view: ${view}`, () => {
-      cy.get(selectors.subtitle)
+    it(`Should display the home page in the view: ${view}`, () => {
+      cy
+        .visit(baseUrl)
+        .get(selectors.subtitle)
         .should('contain', 'Welcome to Down the Code!')
         .get(selectors.paragraph)
         .should(
@@ -30,8 +32,8 @@ describe('DownTheCode Home Page', () => {
         .should('be.visible');
     });
 
-    it.only(`Should display the about-us page in the view: ${view}`, () => {
-      cy.
+    it(`Should display the about-us page in the view: ${view}`, () => {
+      cy
         .visit(`${baseUrl}/about-us`)
         .get(selectors.subtitle)
         .should('contain', 'About us')

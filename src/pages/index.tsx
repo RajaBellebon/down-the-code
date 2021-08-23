@@ -30,7 +30,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <h2>Welcome to Down the Code!</h2>
-      <center>✈️ Enjoy the pics of our different travels 🗺️!</center>
+      <center>
+        ✈️ Enjoy the pics of our different travels 🗺️ or a daily image of the
+        cosmos 🪐!
+      </center>
       <br />
       {images.map((img: any) => {
         return (
