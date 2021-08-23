@@ -31,11 +31,9 @@ const AboutUs = () => {
   return (
     <Layout>
       <h2>About us</h2>
-      <div>👩🏻Giulia</div>
-      <em>Economist / Strategist</em>
-      <div>♥️</div>
-      <div>👨🏾Raja</div>
-      <em>Software Engineer</em>
+      <center>👩🏻 Giulia - Economist / Strategist</center>
+      <center>♥️</center>
+      <center>👨🏾 Raja - Software Engineer</center>
       {images.map((img: any) => {
         return (
           <Img

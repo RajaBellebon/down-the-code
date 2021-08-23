@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: '.env',
+});
+
 module.exports = {
   siteMetadata: {
     title: 'Down the Code',
@@ -49,6 +53,10 @@ module.exports = {
       {
         name: 'India',
         link: '/india',
+      },
+      {
+        name: 'Nasa',
+        link: '/nasa-image-of-the-day',
       },
       {
         name: 'About us',
@@ -174,9 +182,11 @@ module.exports = {
         icon: 'src/images/tulec.png', // This path is relative to the root of the site.
       },
     },
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ['NASA_API_KEY'],
+      },
+    },
   ],
 };
