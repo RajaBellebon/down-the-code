@@ -48,7 +48,7 @@ class NasaImageOfTheDay extends React.Component<{}, { image: NasaImage[] }> {
         </center>
         <a href="https://apod.nasa.gov/apod/astropix.html">Source</a>
         {this.state.image.length === 0
-          ? 'Loading users...'
+          ? '🏋️Loading image...🏋️'
           : this.state.image.map(img => (
               <figure key={img.date}>
                 <img src={img.url} />
