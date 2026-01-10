@@ -1,14 +1,11 @@
 {
   "name": "down-the-code",
-  "description": "Using Gatsby default starter, building a website that displays pictures of travels",
+  "description": "Travel photography and paintings showcase",
   "version": "1.0.0",
   "author": "Raja Bellebon <rbellebon@gmail.com>",
   "dependencies": {
-    "@babel/preset-env": "^7.12.1",
-    "@emotion/react": "^11.1.5",
-    "@fortawesome/fontawesome-svg-core": "^1.2.15",
-    "@fortawesome/free-brands-svg-icons": "^5.7.2",
-    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@babel/preset-env": "^7.23.0",
+    "@emotion/react": "^11.13.0",
     "gatsby": "^3.1.0",
     "gatsby-image": "^3.1.0",
     "gatsby-plugin-emotion": "^6.1.0",
@@ -21,11 +18,11 @@
     "gatsby-source-filesystem": "^3.1.0",
     "gatsby-transformer-remark": "^3.1.0",
     "gatsby-transformer-sharp": "^3.1.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0",
-    "reactstrap": "^7.1.0"
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "reactstrap": "^9.2.0"
   },
   "keywords": [
     "down-the-code",
@@ -33,10 +30,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby build",
     "clean": "rm -rf .cache && rm -rf node_modules && yarn",
-    "serve": "gatsby serve",
-    "develop": "gatsby develop",
+    "serve": "NODE_OPTIONS=--openssl-legacy-provider gatsby serve",
+    "develop": "NODE_OPTIONS=--openssl-legacy-provider gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
     "typecheck": "tsc --noEmit --project tsconfig.json",
@@ -45,24 +42,25 @@
     "test:e2e:watch": "cypress open"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-typescript": "^7.13.0",
-    "@types/node": "^14.14.35",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.2",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-typescript": "^7.23.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@types/react-helmet": "^6.1.0",
-    "@types/react-test-renderer": "^17.0.1",
+    "@types/react-test-renderer": "^18.0.0",
     "@types/reactstrap": "^8.7.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-gatsby": "^0.1.6",
-    "cypress": "^6.8.0",
-    "dotenv": "^10.0.0",
-    "husky": "^1.2.1",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.15.2",
+    "cypress": "^13.6.0",
+    "dotenv": "^16.3.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.0",
     "react-media": "^1.9.2",
-    "start-server-and-test": "^1.10.2",
-    "typescript": "^4.2.3"
+    "source-map": "^0.6.1",
+    "start-server-and-test": "^2.0.0",
+    "typescript": "^5.3.0"
   },
   "husky": {
     "hooks": {
@@ -78,5 +76,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/RajaBellebon/tulec"
+  },
+  "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39",
+  "resolutions": {
+    "postcss": "^8.4.31"
   }
 }

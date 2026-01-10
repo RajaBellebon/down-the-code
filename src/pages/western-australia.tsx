@@ -1,4 +1,3 @@
-import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -12,8 +11,8 @@ const getImages = () => {
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
+                fluid(maxWidth: 1920, quality: 95) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
               name
