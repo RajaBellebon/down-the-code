@@ -16572,7 +16572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.11":
+"nanoid@npm:^3.1.20":
   version: 3.3.11
   resolution: "nanoid@npm:3.3.11::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fnanoid%2F-%2Fnanoid-3.3.11.tgz"
   bin:
@@ -18657,14 +18657,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.31":
-  version: 8.5.6
-  resolution: "postcss@npm:8.5.6::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss%2F-%2Fpostcss-8.5.6.tgz"
+"postcss@npm:8.2.6":
+  version: 8.2.6
+  resolution: "postcss@npm:8.2.6::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss%2F-%2Fpostcss-8.2.6.tgz"
   dependencies:
-    nanoid: "npm:^3.3.11"
-    picocolors: "npm:^1.1.1"
-    source-map-js: "npm:^1.2.1"
-  checksum: 10c0/5127cc7c91ed7a133a1b7318012d8bfa112da9ef092dddf369ae699a1f10ebbd89b1b9f25f3228795b84585c72aabd5ced5fc11f2ba467eedf7b081a66fad024
+    colorette: "npm:^1.2.1"
+    nanoid: "npm:^3.1.20"
+    source-map: "npm:^0.6.1"
+  checksum: 10c0/a452da2f3cda2b8a5247e3eb302b7990c752688f8ce34aac4d570332aac10b98fae1bb574d0c82a848d3f417012f433f220e2173d8ecb9afa75045bac19ba94c
   languageName: node
   linkType: hard
 
@@ -20979,13 +20979,6 @@ __metadata:
   version: 2.0.1
   resolution: "source-list-map@npm:2.0.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fsource-list-map%2F-%2Fsource-list-map-2.0.1.tgz"
   checksum: 10c0/2e5e421b185dcd857f46c3c70e2e711a65d717b78c5f795e2e248c9d67757882ea989b80ebc08cf164eeeda5f4be8aa95d3b990225070b2daaaf3257c5958149
-  languageName: node
-  linkType: hard
-
-"source-map-js@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "source-map-js@npm:1.2.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fsource-map-js%2F-%2Fsource-map-js-1.2.1.tgz"
-  checksum: 10c0/7bda1fc4c197e3c6ff17de1b8b2c20e60af81b63a52cb32ec5a5d67a20a7d42651e2cb34ebe93833c5a2a084377e17455854fee3e21e7925c64a51b6a52b0faf
   languageName: node
   linkType: hard
 
