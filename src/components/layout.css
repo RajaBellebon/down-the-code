@@ -672,6 +672,12 @@ pre tt:before,
 pre tt:after {
   content: '';
 }
+
+/* Fix for postcss-discard-overridden bug - ensure there's a non-empty rule before @media */
+html {
+  /* Dummy declaration to prevent postcss-discard-overridden from failing */
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

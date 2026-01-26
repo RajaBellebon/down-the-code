@@ -7922,7 +7922,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-convert@npm:^1.9.0, color-convert@npm:^1.9.1":
+"color-convert@npm:^1.9.0, color-convert@npm:^1.9.1, color-convert@npm:^1.9.3":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcolor-convert%2F-%2Fcolor-convert-1.9.3.tgz"
   dependencies:
@@ -7954,16 +7954,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-string@npm:^1.5.2":
-  version: 1.5.3
-  resolution: "color-string@npm:1.5.3::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcolor-string%2F-%2Fcolor-string-1.5.3.tgz"
-  dependencies:
-    color-name: "npm:^1.0.0"
-    simple-swizzle: "npm:^0.2.2"
-  checksum: 10c0/1915e62220125bcd50b92268ef8713ee00fffaaf34ee622fd469b773022d3677277c054e11069d81b8906e5ab667268f612fa32b215fcfc225fecf7be8ce6b09
-  languageName: node
-  linkType: hard
-
 "color-string@npm:^1.5.4":
   version: 1.5.5
   resolution: "color-string@npm:1.5.5::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcolor-string%2F-%2Fcolor-string-1.5.5.tgz"
@@ -7974,13 +7964,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color@npm:^3.0.0":
-  version: 3.1.2
-  resolution: "color@npm:3.1.2::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcolor%2F-%2Fcolor-3.1.2.tgz"
+"color-string@npm:^1.6.0":
+  version: 1.9.1
+  resolution: "color-string@npm:1.9.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcolor-string%2F-%2Fcolor-string-1.9.1.tgz"
   dependencies:
-    color-convert: "npm:^1.9.1"
-    color-string: "npm:^1.5.2"
-  checksum: 10c0/38072674b8ed4b98d61be6087763bd01931753a5043ab5a5cf0d0bcb0b7b8211e4f14ae65aef42ba368de7382b3185f9e15557022814a58ec0f47b6be433e45f
+    color-name: "npm:^1.0.0"
+    simple-swizzle: "npm:^0.2.2"
+  checksum: 10c0/b0bfd74c03b1f837f543898b512f5ea353f71630ccdd0d66f83028d1f0924a7d4272deb278b9aef376cacf1289b522ac3fb175e99895283645a2dc3a33af2404
+  languageName: node
+  linkType: hard
+
+"color@npm:^3.0.0":
+  version: 3.2.1
+  resolution: "color@npm:3.2.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcolor%2F-%2Fcolor-3.2.1.tgz"
+  dependencies:
+    color-convert: "npm:^1.9.3"
+    color-string: "npm:^1.6.0"
+  checksum: 10c0/39345d55825884c32a88b95127d417a2c24681d8b57069413596d9fcbb721459ef9d9ec24ce3e65527b5373ce171b73e38dbcd9c830a52a6487e7f37bf00e83c
   languageName: node
   linkType: hard
 
@@ -8594,26 +8594,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-tree@npm:1.0.0-alpha.29":
-  version: 1.0.0-alpha.29
-  resolution: "css-tree@npm:1.0.0-alpha.29::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcss-tree%2F-%2Fcss-tree-1.0.0-alpha.29.tgz"
-  dependencies:
-    mdn-data: "npm:~1.1.0"
-    source-map: "npm:^0.5.3"
-  checksum: 10c0/c5fe43ef95b4d787afd34dd18381fc8c269591788012bfcf3f0fbdcdb8325a7de70d157e113a6ce0d7773b66eff9064d066f6e0157b66ead376225ef90beb7e6
-  languageName: node
-  linkType: hard
-
-"css-tree@npm:1.0.0-alpha.33":
-  version: 1.0.0-alpha.33
-  resolution: "css-tree@npm:1.0.0-alpha.33::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcss-tree%2F-%2Fcss-tree-1.0.0-alpha.33.tgz"
-  dependencies:
-    mdn-data: "npm:2.0.4"
-    source-map: "npm:^0.5.3"
-  checksum: 10c0/ea4fe2f397dd134f181888434183d7b659a23684ae963ecff6a1488f45dd48b745b018122fa7425555db2b3b3bd2b06de41cd9e36ebc589ed7b85027804a1265
-  languageName: node
-  linkType: hard
-
 "css-tree@npm:1.0.0-alpha.37":
   version: 1.0.0-alpha.37
   resolution: "css-tree@npm:1.0.0-alpha.37::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcss-tree%2F-%2Fcss-tree-1.0.0-alpha.37.tgz"
@@ -8634,13 +8614,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-unit-converter@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "css-unit-converter@npm:1.1.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcss-unit-converter%2F-%2Fcss-unit-converter-1.1.1.tgz"
-  checksum: 10c0/12a855437af30087467a0a393c45d5e1088ee0431f4c51a1ef5799e921b6ac8566b2fd71eab7a62505adebe012c995ff0e8bf7c9d7a8f64b4661a6a2aeb703b6
-  languageName: node
-  linkType: hard
-
 "css-what@npm:2.1, css-what@npm:^2.1.2":
   version: 2.1.3
   resolution: "css-what@npm:2.1.3::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcss-what%2F-%2Fcss-what-2.1.3.tgz"
@@ -8652,15 +8625,6 @@ __metadata:
   version: 1.5.1
   resolution: "css.escape@npm:1.5.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcss.escape%2F-%2Fcss.escape-1.5.1.tgz"
   checksum: 10c0/5e09035e5bf6c2c422b40c6df2eb1529657a17df37fda5d0433d722609527ab98090baf25b13970ca754079a0f3161dd3dfc0e743563ded8cfa0749d861c1525
-  languageName: node
-  linkType: hard
-
-"cssesc@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "cssesc@npm:2.0.0::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcssesc%2F-%2Fcssesc-2.0.0.tgz"
-  bin:
-    cssesc: bin/cssesc
-  checksum: 10c0/3cf8cb06782e70bea7ccc3a215682399e0a1c42061b4f09411617ec8c04567eab52e132af5b35abea16269220e0e7d3d66f5d14014926eac63471406fec12094
   languageName: node
   linkType: hard
 
@@ -8681,8 +8645,8 @@ __metadata:
   linkType: hard
 
 "cssnano-preset-default@npm:^4.0.7":
-  version: 4.0.7
-  resolution: "cssnano-preset-default@npm:4.0.7::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcssnano-preset-default%2F-%2Fcssnano-preset-default-4.0.7.tgz"
+  version: 4.0.8
+  resolution: "cssnano-preset-default@npm:4.0.8::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcssnano-preset-default%2F-%2Fcssnano-preset-default-4.0.8.tgz"
   dependencies:
     css-declaration-sorter: "npm:^4.0.1"
     cssnano-util-raw-cache: "npm:^4.0.1"
@@ -8712,9 +8676,9 @@ __metadata:
     postcss-ordered-values: "npm:^4.1.2"
     postcss-reduce-initial: "npm:^4.0.3"
     postcss-reduce-transforms: "npm:^4.0.2"
-    postcss-svgo: "npm:^4.0.2"
+    postcss-svgo: "npm:^4.0.3"
     postcss-unique-selectors: "npm:^4.0.1"
-  checksum: 10c0/6a7d6c6f0561cf3893358ff0c2eaf989f872798c3585f61cb8c8a38784b85459d072fce733812ed65f5856beb587e6b91d50281c67b47a0609b2055f086f9e05
+  checksum: 10c0/6017657e0733da6ca73098452a7aed1a9b408b8b745e58ac86a4e3a5aa44f8d4476c2d6f16284a00aa649396624a03fb9bacce4746cfbb0edb593871ff20c7a1
   languageName: node
   linkType: hard
 
@@ -8748,7 +8712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano@npm:^4.1.10":
+"cssnano@npm:4.1.10":
   version: 4.1.10
   resolution: "cssnano@npm:4.1.10::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcssnano%2F-%2Fcssnano-4.1.10.tgz"
   dependencies:
@@ -8757,15 +8721,6 @@ __metadata:
     is-resolvable: "npm:^1.0.0"
     postcss: "npm:^7.0.0"
   checksum: 10c0/e27542b66624689184f9d984d5ffe71a0b8edf2d9e48f586c74b6f22a702b634eeec8353cda0b30734398592beee03980af1b6e8f8b0261a1e3e055669e53448
-  languageName: node
-  linkType: hard
-
-"csso@npm:^3.5.1":
-  version: 3.5.1
-  resolution: "csso@npm:3.5.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fcsso%2F-%2Fcsso-3.5.1.tgz"
-  dependencies:
-    css-tree: "npm:1.0.0-alpha.29"
-  checksum: 10c0/4fb69a9364d6d90bd51da18965ef46418c19570ab050ec15116343d4c209978f208b62aba175f47e465f4f3d00c233f6c8fa55d80fecc2180b74999a9a4a8e2e
   languageName: node
   linkType: hard
 
@@ -9552,15 +9507,6 @@ __metadata:
     domelementtype: "npm:^2.0.1"
     domhandler: "npm:^4.0.0"
   checksum: 10c0/dfc94b6eac6e9a4403886d0f4d42a4507c0b35989e07500763ec8566e29a8bc068c48db63ef731851d30f50de12880b2e74e8ca1afbdc5a066e8fca83ec540cd
-  languageName: node
-  linkType: hard
-
-"dot-prop@npm:^4.1.1":
-  version: 4.2.0
-  resolution: "dot-prop@npm:4.2.0::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fdot-prop%2F-%2Fdot-prop-4.2.0.tgz"
-  dependencies:
-    is-obj: "npm:^1.0.0"
-  checksum: 10c0/307a2c3fc94c02a4cd52c28d2782f448a4a64e493da077dd1e99105248230309b8aff0bcd6bb02151dd613e72ebf31ba4bd2664b54ffdf39a044ac85365a96cc
   languageName: node
   linkType: hard
 
@@ -13096,7 +13042,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"has@npm:^1.0.0, has@npm:^1.0.1, has@npm:^1.0.3":
+"has@npm:^1.0.0":
+  version: 1.0.4
+  resolution: "has@npm:1.0.4::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fhas%2F-%2Fhas-1.0.4.tgz"
+  checksum: 10c0/82c1220573dc1f0a014a5d6189ae52a1f820f99dfdc00323c3a725b5002dcb7f04e44f460fea7af068474b2dd7c88cbe1846925c84017be9e31e1708936d305b
+  languageName: node
+  linkType: hard
+
+"has@npm:^1.0.1, has@npm:^1.0.3":
   version: 1.0.3
   resolution: "has@npm:1.0.3::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fhas%2F-%2Fhas-1.0.3.tgz"
   dependencies:
@@ -13305,13 +13258,6 @@ __metadata:
   version: 1.0.0
   resolution: "hsla-regex@npm:1.0.0::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fhsla-regex%2F-%2Fhsla-regex-1.0.0.tgz"
   checksum: 10c0/307874844a055af7a8f225e3908e1f7a2d96aa28e86abcb7ce1837cd86acf32d1f3c71ae105416d4c8623c8f9220b1bc799598851b0826274faa047710985f76
-  languageName: node
-  linkType: hard
-
-"html-comment-regex@npm:^1.1.0":
-  version: 1.1.2
-  resolution: "html-comment-regex@npm:1.1.2::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fhtml-comment-regex%2F-%2Fhtml-comment-regex-1.1.2.tgz"
-  checksum: 10c0/c6fe47e7efbb2e853217854cdf352e53a6d414f87a6029456010250179f9ac2c77ef657dd4e26f4d3930f8def0e2fad015c233a3181a195a59fb4eeda6d333f9
   languageName: node
   linkType: hard
 
@@ -14376,13 +14322,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-obj@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "is-obj@npm:1.0.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fis-obj%2F-%2Fis-obj-1.0.1.tgz"
-  checksum: 10c0/5003acba0af7aa47dfe0760e545a89bbac89af37c12092c3efadc755372cdaec034f130e7a3653a59eb3c1843cfc72ca71eaf1a6c3bafe5a0bab3611a47f9945
-  languageName: node
-  linkType: hard
-
 "is-obj@npm:^2.0.0":
   version: 2.0.0
   resolution: "is-obj@npm:2.0.0::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fis-obj%2F-%2Fis-obj-2.0.0.tgz"
@@ -14572,15 +14511,6 @@ __metadata:
   version: 1.0.5
   resolution: "is-string@npm:1.0.5::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fis-string%2F-%2Fis-string-1.0.5.tgz"
   checksum: 10c0/f8a124e895892e3058b7152cd805ef684a8c0b45edb51f44387d6f7654a0131d6f298f6033e518b4955dfc3c9e75beff26bbb430b8a2b61e1692188d69f3a276
-  languageName: node
-  linkType: hard
-
-"is-svg@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "is-svg@npm:3.0.0::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fis-svg%2F-%2Fis-svg-3.0.0.tgz"
-  dependencies:
-    html-comment-regex: "npm:^1.1.0"
-  checksum: 10c0/9a206315487bfe32907853aa2a06012d4358e6af57f22cc4c253af69ab46605a8f99a2b8d5b6151736c4be890ab27c003db0828487c60786d1aec8a63c961b50
   languageName: node
   linkType: hard
 
@@ -15935,13 +15865,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdn-data@npm:~1.1.0":
-  version: 1.1.4
-  resolution: "mdn-data@npm:1.1.4::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fmdn-data%2F-%2Fmdn-data-1.1.4.tgz"
-  checksum: 10c0/13d96f1bf709f202315dbb771579bd1d3352db3854eaf57472d485594a78bbc5b9e61d987de19232511157ddc9d702f98dd7b31a0bbee72c4f219f65fbf02017
-  languageName: node
-  linkType: hard
-
 "mdurl@npm:^1.0.1":
   version: 1.0.1
   resolution: "mdurl@npm:1.0.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fmdurl%2F-%2Fmdurl-1.0.1.tgz"
@@ -16572,7 +16495,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.20":
+"nanoid@npm:^3.3.11":
   version: 3.3.11
   resolution: "nanoid@npm:3.3.11::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fnanoid%2F-%2Fnanoid-3.3.11.tgz"
   bin:
@@ -18241,14 +18164,13 @@ __metadata:
   linkType: hard
 
 "postcss-calc@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "postcss-calc@npm:7.0.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-calc%2F-%2Fpostcss-calc-7.0.1.tgz"
+  version: 7.0.5
+  resolution: "postcss-calc@npm:7.0.5::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-calc%2F-%2Fpostcss-calc-7.0.5.tgz"
   dependencies:
-    css-unit-converter: "npm:^1.1.1"
-    postcss: "npm:^7.0.5"
-    postcss-selector-parser: "npm:^5.0.0-rc.4"
-    postcss-value-parser: "npm:^3.3.1"
-  checksum: 10c0/cd4d2d8fa4218a9f89f3cdd69287731f60aea8716ada590e0962894f59bf5a830eb165c31d0e4e4094999b897b8fb982f29786ab67398994e14a2fa8a68268a2
+    postcss: "npm:^7.0.27"
+    postcss-selector-parser: "npm:^6.0.2"
+    postcss-value-parser: "npm:^4.0.2"
+  checksum: 10c0/37f10245a1280d96165a8f56a0cd90fcbc3f9277fc50b54ba79a45f24da4662b8ce57dcffe81331e8997bcc56f7b89fae4e8d9dc27b8c5d72010976d622388e3
   languageName: node
   linkType: hard
 
@@ -18587,24 +18509,13 @@ __metadata:
   linkType: hard
 
 "postcss-selector-parser@npm:^3.0.0":
-  version: 3.1.1
-  resolution: "postcss-selector-parser@npm:3.1.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-selector-parser%2F-%2Fpostcss-selector-parser-3.1.1.tgz"
+  version: 3.1.2
+  resolution: "postcss-selector-parser@npm:3.1.2::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-selector-parser%2F-%2Fpostcss-selector-parser-3.1.2.tgz"
   dependencies:
-    dot-prop: "npm:^4.1.1"
+    dot-prop: "npm:^5.2.0"
     indexes-of: "npm:^1.0.1"
     uniq: "npm:^1.0.1"
-  checksum: 10c0/ea2cf7c0aa0b64104cbae8f3794dc36909e738854ab956fbd12c7dde62bf04c14052c780f175c4e9df23ee4b48487f2ad5866767a3d65953ebe5efb543281a73
-  languageName: node
-  linkType: hard
-
-"postcss-selector-parser@npm:^5.0.0-rc.4":
-  version: 5.0.0
-  resolution: "postcss-selector-parser@npm:5.0.0::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-selector-parser%2F-%2Fpostcss-selector-parser-5.0.0.tgz"
-  dependencies:
-    cssesc: "npm:^2.0.0"
-    indexes-of: "npm:^1.0.1"
-    uniq: "npm:^1.0.1"
-  checksum: 10c0/4f5773963d16f4e1dfce64032ffab2e7fba3239d3a545ee00316f68ccf49f609c1a7b141d9ad1eb68b34690382c6d116636731c7849bafe1930dc4bb6ef5aa18
+  checksum: 10c0/65f8fb1dcd64e9a3de03a6bd5e0a2e67475a01057d8470b46723cd569d1ddba4d18107e45aee26b46d8cdaab6ef8f5aad7c2e934fc4c46386418cc578dcc181b
   languageName: node
   linkType: hard
 
@@ -18620,15 +18531,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-svgo@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "postcss-svgo@npm:4.0.2::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-svgo%2F-%2Fpostcss-svgo-4.0.2.tgz"
+"postcss-svgo@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "postcss-svgo@npm:4.0.3::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-svgo%2F-%2Fpostcss-svgo-4.0.3.tgz"
   dependencies:
-    is-svg: "npm:^3.0.0"
     postcss: "npm:^7.0.0"
     postcss-value-parser: "npm:^3.0.0"
     svgo: "npm:^1.0.0"
-  checksum: 10c0/24988762f0fb4e5e0d2eb6e6430ba837d13007da1877155aa827f50f4b4ae8046a24ec89d270d53755a6466e7090a54e803de35a473ec96214fb49fca7a7af5a
+  checksum: 10c0/555eccf33c533e5f28f8441c5b14a2b1f606d56b8a357efad190f8d6d2646c11e088b740ba21798d41ba7c6819b6bd237a805dd1f8ddd44dd5c1c50ab5532f91
   languageName: node
   linkType: hard
 
@@ -18643,10 +18553,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-value-parser@npm:^3.0.0, postcss-value-parser@npm:^3.3.1":
+"postcss-value-parser@npm:^3.0.0":
   version: 3.3.1
   resolution: "postcss-value-parser@npm:3.3.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-value-parser%2F-%2Fpostcss-value-parser-3.3.1.tgz"
   checksum: 10c0/23eed98d8eeadb1f9ef1db4a2757da0f1d8e7c1dac2a38d6b35d971aab9eb3c6d8a967d0e9f435558834ffcd966afbbe875a56bcc5bcdd09e663008c106b3e47
+  languageName: node
+  linkType: hard
+
+"postcss-value-parser@npm:^4.0.2":
+  version: 4.2.0
+  resolution: "postcss-value-parser@npm:4.2.0::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss-value-parser%2F-%2Fpostcss-value-parser-4.2.0.tgz"
+  checksum: 10c0/f4142a4f56565f77c1831168e04e3effd9ffcc5aebaf0f538eee4b2d465adfd4b85a44257bb48418202a63806a7da7fe9f56c330aebb3cac898e46b4cbf49161
   languageName: node
   linkType: hard
 
@@ -18657,14 +18574,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.2.6":
-  version: 8.2.6
-  resolution: "postcss@npm:8.2.6::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss%2F-%2Fpostcss-8.2.6.tgz"
+"postcss@npm:^8.4.31":
+  version: 8.5.6
+  resolution: "postcss@npm:8.5.6::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fpostcss%2F-%2Fpostcss-8.5.6.tgz"
   dependencies:
-    colorette: "npm:^1.2.1"
-    nanoid: "npm:^3.1.20"
-    source-map: "npm:^0.6.1"
-  checksum: 10c0/a452da2f3cda2b8a5247e3eb302b7990c752688f8ce34aac4d570332aac10b98fae1bb574d0c82a848d3f417012f433f220e2173d8ecb9afa75045bac19ba94c
+    nanoid: "npm:^3.3.11"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/5127cc7c91ed7a133a1b7318012d8bfa112da9ef092dddf369ae699a1f10ebbd89b1b9f25f3228795b84585c72aabd5ced5fc11f2ba467eedf7b081a66fad024
   languageName: node
   linkType: hard
 
@@ -20982,6 +20899,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"source-map-js@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "source-map-js@npm:1.2.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fsource-map-js%2F-%2Fsource-map-js-1.2.1.tgz"
+  checksum: 10c0/7bda1fc4c197e3c6ff17de1b8b2c20e60af81b63a52cb32ec5a5d67a20a7d42651e2cb34ebe93833c5a2a084377e17455854fee3e21e7925c64a51b6a52b0faf
+  languageName: node
+  linkType: hard
+
 "source-map-resolve@npm:^0.5.0":
   version: 0.5.2
   resolution: "source-map-resolve@npm:0.5.2::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fsource-map-resolve%2F-%2Fsource-map-resolve-0.5.2.tgz"
@@ -21019,7 +20943,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.5.0, source-map@npm:^0.5.3, source-map@npm:^0.5.6, source-map@npm:^0.5.7":
+"source-map@npm:^0.5.0, source-map@npm:^0.5.6, source-map@npm:^0.5.7":
   version: 0.5.7
   resolution: "source-map@npm:0.5.7::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fsource-map%2F-%2Fsource-map-0.5.7.tgz"
   checksum: 10c0/904e767bb9c494929be013017380cbba013637da1b28e5943b566031e29df04fba57edf3f093e0914be094648b577372bd8ad247fa98cfba9c600794cd16b599
@@ -21792,7 +21716,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svgo@npm:1.3.2":
+"svgo@npm:1.3.2, svgo@npm:^1.0.0":
   version: 1.3.2
   resolution: "svgo@npm:1.3.2::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fsvgo%2F-%2Fsvgo-1.3.2.tgz"
   dependencies:
@@ -21812,29 +21736,6 @@ __metadata:
   bin:
     svgo: ./bin/svgo
   checksum: 10c0/261a82b08acf63accd7a54b47b4ffcd2fc7e7d7f8efef3cbc61184583b24b4c5434656004c30190302821af0f6d7b047eac730b0dcdab5d179e6a74383ccc776
-  languageName: node
-  linkType: hard
-
-"svgo@npm:^1.0.0":
-  version: 1.3.0
-  resolution: "svgo@npm:1.3.0::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fsvgo%2F-%2Fsvgo-1.3.0.tgz"
-  dependencies:
-    chalk: "npm:^2.4.1"
-    coa: "npm:^2.0.2"
-    css-select: "npm:^2.0.0"
-    css-select-base-adapter: "npm:^0.1.1"
-    css-tree: "npm:1.0.0-alpha.33"
-    csso: "npm:^3.5.1"
-    js-yaml: "npm:^3.13.1"
-    mkdirp: "npm:~0.5.1"
-    object.values: "npm:^1.1.0"
-    sax: "npm:~1.2.4"
-    stable: "npm:^0.1.8"
-    unquote: "npm:~1.1.1"
-    util.promisify: "npm:~1.0.0"
-  bin:
-    svgo: ./bin/svgo
-  checksum: 10c0/af51e6c109d70137a737b0a7b6326f3cb626788ad2990103e7de182bcf312b7abbeeee0616005ff0f2aee6ddc283323cc4bef42aca7bd3888dd9e9d2c72bdad3
   languageName: node
   linkType: hard
 
@@ -23235,9 +23136,9 @@ __metadata:
   linkType: hard
 
 "vendors@npm:^1.0.0":
-  version: 1.0.3
-  resolution: "vendors@npm:1.0.3::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fvendors%2F-%2Fvendors-1.0.3.tgz"
-  checksum: 10c0/602bde9742a5323c216053be5b1ac54842bd1538424cf860c529b41644e6c98a79fa346515ce30187beefff9c0dd0e3a064cb89f823601e4f2c974247a141811
+  version: 1.0.4
+  resolution: "vendors@npm:1.0.4::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fvendors%2F-%2Fvendors-1.0.4.tgz"
+  checksum: 10c0/a9b097f3607013a23bf447cbaff85b79b694cc23b20e81a6aea1ea9e1c59854c93f7c87abcc71b57999e050606e499d9ce18df67968823644b20f6e03d56022a
   languageName: node
   linkType: hard
 
