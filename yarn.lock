@@ -22980,23 +22980,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"url-parse@npm:^1.4.3":
-  version: 1.4.7
-  resolution: "url-parse@npm:1.4.7::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Furl-parse%2F-%2Furl-parse-1.4.7.tgz"
+"url-parse@npm:^1.4.3, url-parse@npm:^1.4.7":
+  version: 1.5.10
+  resolution: "url-parse@npm:1.5.10"
   dependencies:
     querystringify: "npm:^2.1.1"
     requires-port: "npm:^1.0.0"
-  checksum: 10c0/21b947e3870e566c4cd01f25c8120a74bb46744605b3e84211f2879ce0bc20ca6940e79c83dceac918a716495ef131e6718929cb42680b0712d43fec0b71c300
-  languageName: node
-  linkType: hard
-
-"url-parse@npm:^1.4.7":
-  version: 1.5.1
-  resolution: "url-parse@npm:1.5.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Furl-parse%2F-%2Furl-parse-1.5.1.tgz"
-  dependencies:
-    querystringify: "npm:^2.1.1"
-    requires-port: "npm:^1.0.0"
-  checksum: 10c0/ee30cc9d82d2fb94a02da38cfc685947784128408b8d4900856a78122abb365db397c83bc41d47c11eca713b99a295ff1878a657174c4c8a7ad0a7abc23083f0
+  checksum: 10c0/bd5aa9389f896974beb851c112f63b466505a04b4807cea2e5a3b7092f6fbb75316f0491ea84e44f66fed55f1b440df5195d7e3a8203f64fcefa19d182f5be87
   languageName: node
   linkType: hard
 
