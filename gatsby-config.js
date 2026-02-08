@@ -15,8 +15,16 @@ module.exports = {
         link: '/nepal',
       },
       {
-        name: 'Wedding Shooting',
-        link: '/wedding-shooting',
+        name: 'Thailand',
+        link: '/thailand',
+      },
+      {
+        name: 'New Caledonia',
+        link: '/new-caledonia',
+      },
+      {
+        name: 'Paintings',
+        link: '/paintings',
       },
       {
         name: 'Western Australia',
@@ -59,8 +67,8 @@ module.exports = {
         link: '/nasa-image-of-the-day',
       },
       {
-        name: 'About us',
-        link: '/about-us',
+        name: 'About me',
+        link: '/about-me',
       },
     ],
   },
@@ -76,8 +84,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `wedding`,
-        path: `${__dirname}/src/images/wedding`,
+        name: `thailand`,
+        path: `${__dirname}/src/images/thailand`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `new-caledonia`,
+        path: `${__dirname}/src/images/new-caledonia`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `paintings`,
+        path: `${__dirname}/src/images/paintings`,
       },
     },
     {
@@ -168,25 +190,36 @@ module.exports = {
     'gatsby-plugin-testing',
     `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-emotion',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-sharp',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#375E97',
-        theme_color: '#375E97',
-        display: 'minimal-ui',
-        icon: 'src/images/tulec.png', // This path is relative to the root of the site.
+        defaults: {
+          quality: 90,
+          formats: ['auto', 'webp'],
+          placeholder: 'blurred',
+        },
       },
     },
+    'gatsby-plugin-emotion',
+    process.env.NODE_ENV === 'development'
+      ? null
+      : {
+          resolve: `gatsby-plugin-manifest`,
+          options: {
+            name: 'gatsby-starter-default',
+            short_name: 'starter',
+            start_url: '/',
+            background_color: '#375E97',
+            theme_color: '#375E97',
+            display: 'minimal-ui',
+            icon: 'src/images/tulec.png',
+          },
+        },
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
         allowList: ['NASA_API_KEY'],
       },
     },
-  ],
+  ].filter(Boolean),
 };

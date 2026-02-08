@@ -42,7 +42,7 @@ const Layout = ({ children }: { children: any }) => (
           menuLinks={data.site.siteMetadata.menuLinks}
           siteTitle={data.site.siteMetadata.title}
         />
-        <Media query={{ maxWidth: 848 }}>
+        <Media query="(max-width: 848px)">
           {matches =>
             matches ? (
               <div

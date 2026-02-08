@@ -1,8 +1,11 @@
 module.exports = {
   presets: [
-    'babel-preset-gatsby',
-    '@babel/preset-env',
-    '@babel/preset-typescript',
+    [
+      'babel-preset-gatsby',
+      {
+        useBuiltIns: false,
+      },
+    ],
   ],
   plugins: ['@babel/plugin-proposal-class-properties'],
 };
