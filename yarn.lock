@@ -5760,21 +5760,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.1.0":
-  version: 6.10.2
-  resolution: "ajv@npm:6.10.2::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fajv%2F-%2Fajv-6.10.2.tgz"
-  dependencies:
-    fast-deep-equal: "npm:^2.0.1"
-    fast-json-stable-stringify: "npm:^2.0.0"
-    json-schema-traverse: "npm:^0.4.1"
-    uri-js: "npm:^4.2.2"
-  checksum: 10c0/4d8cabbdf424ce9b6980acbd3ae30b8ce0ac380682e0cd42a73d134d3ac70bd287b071458da5611a42cf5fd2775fd9eb94b8712a1c20e26f22cbfb0ff11508be
-  languageName: node
-  linkType: hard
-
-"ajv@npm:^6.10.0, ajv@npm:^6.12.4, ajv@npm:^6.12.5":
+"ajv@npm:^6.1.0, ajv@npm:^6.10.0, ajv@npm:^6.12.4, ajv@npm:^6.12.5":
   version: 6.12.6
-  resolution: "ajv@npm:6.12.6::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Fajv%2F-%2Fajv-6.12.6.tgz"
+  resolution: "ajv@npm:6.12.6"
   dependencies:
     fast-deep-equal: "npm:^3.1.1"
     fast-json-stable-stringify: "npm:^2.0.0"
@@ -10838,13 +10826,6 @@ __metadata:
   version: 2.1.1
   resolution: "fast-copy@npm:2.1.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Ffast-copy%2F-%2Ffast-copy-2.1.1.tgz"
   checksum: 10c0/0ec1e2bf66a4e3d1aa3b7c864239d246dbe59b36abcd9b465d23f161db6f78de9d59e927e2c35924ac28eadb9e3b74a9fa78d86460442ec4b71421a3ba733c9d
-  languageName: node
-  linkType: hard
-
-"fast-deep-equal@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "fast-deep-equal@npm:2.0.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Ffast-deep-equal%2F-%2Ffast-deep-equal-2.0.1.tgz"
-  checksum: 10c0/1602e0d6ed63493c865cc6b03f9070d6d3926e8cd086a123060b58f80a295f3f08b1ecfb479ae7c45b7fd45535202aea7cf5b49bc31bffb81c20b1502300be84
   languageName: node
   linkType: hard
 
