@@ -11251,33 +11251,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0":
-  version: 1.13.1
-  resolution: "follow-redirects@npm:1.13.1::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Ffollow-redirects%2F-%2Ffollow-redirects-1.13.1.tgz"
+"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.10.0, follow-redirects@npm:^1.15.6":
+  version: 1.16.0
+  resolution: "follow-redirects@npm:1.16.0"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 10c0/5c37aabe996f44a370f1403e68cd0a68a421dd0f25c04dc2240bed24c56bfd9a092a42aa5c2293f5bb7937a0ca6fd7552a2e7b62eb44143393c634ed7bc9abc7
-  languageName: node
-  linkType: hard
-
-"follow-redirects@npm:^1.10.0":
-  version: 1.13.3
-  resolution: "follow-redirects@npm:1.13.3::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Ffollow-redirects%2F-%2Ffollow-redirects-1.13.3.tgz"
-  peerDependenciesMeta:
-    debug:
-      optional: true
-  checksum: 10c0/e3cb24eb776a840a7c61ed5d860c8630ac5ec06bdafa71d020a2734ba8c854a24ea17cdf2fa6a8c0f0ae5e09628783235f1d921dacdaf001969b9157d4fdd998
-  languageName: node
-  linkType: hard
-
-"follow-redirects@npm:^1.15.6":
-  version: 1.15.11
-  resolution: "follow-redirects@npm:1.15.11::__archiveUrl=https%3A%2F%2Fpackages.atlassian.com%2Fapi%2Fnpm%2Fnpm-remote%2Ffollow-redirects%2F-%2Ffollow-redirects-1.15.11.tgz"
-  peerDependenciesMeta:
-    debug:
-      optional: true
-  checksum: 10c0/d301f430542520a54058d4aeeb453233c564aaccac835d29d15e050beb33f339ad67d9bddbce01739c5dc46a6716dbe3d9d0d5134b1ca203effa11a7ef092343
+  checksum: 10c0/a1e2900163e6f1b4d1ed5c221b607f41decbab65534c63fe7e287e40a5d552a6496e7d9d7d976fa4ba77b4c51c11e5e9f683f10b43011ea11e442ff128d0e181
   languageName: node
   linkType: hard
 
